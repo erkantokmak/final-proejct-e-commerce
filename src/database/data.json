@@ -1,0 +1,531 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "image": "sleeve-striped-tshirt.png",
+            "title": "VERTICAL STRIPED T-SHIRT",
+            "description": "A classic dress shirt for formal occasions.",
+            "rating": 4.8,
+            "price": 29.99,
+            "discount": 0,
+            "discountPercentage": 0,
+            "colors": ["White", "Light Blue", "Pink"],
+            "sizes": ["S", "M", "L", "XL"],
+            "stock": 93,
+            "topSeller": true,
+            "newArrival": true,
+            "comments": [
+                {
+                    "rating": 5,
+                    "username": "John Doe",
+                    "comment": "Great product! Fits perfectly!",
+                    "date": "2024-07-02"
+                }
+            ],
+            "type": "tshirt",
+            "dressStyle": "formal"
+        },
+        {
+            "id": 2,
+            "image": "blue-jeans.png",
+            "title": "CLASSIC BLUE JEANS",
+            "description": "Comfortable and stylish blue jeans for everyday wear.",
+            "rating": 4.6,
+            "price": 49.99,
+            "discount": 10,
+            "discountPercentage": 20,
+            "colors": ["Blue", "Dark Blue"],
+            "sizes": ["28", "30", "32", "34", "36"],
+            "stock": 150,
+            "topSeller": false,
+            "newArrival": false,
+            "comments": [
+                {
+                    "rating": 4,
+                    "username": "Jane Smith",
+                    "comment": "Good quality jeans, but runs a bit small.",
+                    "date": "2024-07-05"
+                }
+            ],
+            "type": "jeans",
+            "dressStyle": "casual"
+        },
+        {
+            "id": 3,
+            "image": "black-dress.png",
+            "title": "ELEGANT BLACK DRESS",
+            "description": "A stunning black dress perfect for evening events.",
+            "rating": 4.9,
+            "price": 79.99,
+            "discount": 5,
+            "discountPercentage": 10,
+            "colors": ["Black"],
+            "sizes": ["XS", "S", "M", "L"],
+            "stock": 50,
+            "topSeller": true,
+            "newArrival": true,
+            "comments": [
+                {
+                    "rating": 5,
+                    "username": "Emily Clark",
+                    "comment": "Absolutely love this dress! Looks amazing.",
+                    "date": "2024-07-04"
+                }
+            ],
+            "type": "dress",
+            "dressStyle": "formal"
+        },
+        {
+            "id": 4,
+            "image": "white-sneakers.png",
+            "title": "COMFORT WHITE SNEAKERS",
+            "description": "Perfect sneakers for everyday use.",
+            "rating": 4.7,
+            "price": 59.99,
+            "discount": 0,
+            "discountPercentage": 0,
+            "colors": ["White"],
+            "sizes": ["8", "9", "10", "11", "12"],
+            "stock": 200,
+            "topSeller": true,
+            "newArrival": false,
+            "comments": [
+                {
+                    "rating": 5,
+                    "username": "Michael Brown",
+                    "comment": "Very comfortable and stylish sneakers!",
+                    "date": "2024-07-03"
+                }
+            ],
+            "type": "shoes",
+            "dressStyle": "casual"
+        },
+        {
+            "id": 5,
+            "image": "leather-jacket.png",
+            "title": "LEATHER JACKET",
+            "description": "A must-have leather jacket for a cool look.",
+            "rating": 4.5,
+            "price": 99.99,
+            "discount": 15,
+            "discountPercentage": 15,
+            "colors": ["Black", "Brown"],
+            "sizes": ["S", "M", "L", "XL"],
+            "stock": 75,
+            "topSeller": false,
+            "newArrival": false,
+            "comments": [
+                {
+                    "rating": 4,
+                    "username": "Anna White",
+                    "comment": "Nice jacket, but a bit expensive.",
+                    "date": "2024-07-06"
+                }
+            ],
+            "type": "jacket",
+            "dressStyle": "casual"
+        },
+        {
+            "id": 6,
+            "image": "summer-hat.png",
+            "title": "SUMMER HAT",
+            "description": "Stay cool and stylish with this summer hat.",
+            "rating": 4.8,
+            "price": 19.99,
+            "discount": 0,
+            "discountPercentage": 0,
+            "colors": ["Beige", "White"],
+            "sizes": ["One Size"],
+            "stock": 120,
+            "topSeller": true,
+            "newArrival": true,
+            "comments": [
+                {
+                    "rating": 5,
+                    "username": "Olivia Green",
+                    "comment": "Perfect hat for the summer!",
+                    "date": "2024-07-01"
+                }
+            ],
+            "type": "accessories",
+            "dressStyle": "casual"
+        },
+        {
+            "id": 7,
+            "image": "red-scarf.png",
+            "title": "WARM RED SCARF",
+            "description": "A cozy scarf to keep you warm in winter.",
+            "rating": 4.9,
+            "price": 24.99,
+            "discount": 5,
+            "discountPercentage": 20,
+            "colors": ["Red"],
+            "sizes": ["One Size"],
+            "stock": 60,
+            "topSeller": false,
+            "newArrival": false,
+            "comments": [
+                {
+                    "rating": 5,
+                    "username": "Sophia Blue",
+                    "comment": "So warm and soft!",
+                    "date": "2024-07-05"
+                }
+            ],
+            "type": "accessories",
+            "dressStyle": "casual"
+        },
+        {
+            "id": 8,
+            "image": "blue-blouse.png",
+            "title": "CASUAL BLUE BLOUSE",
+            "description": "A light and breezy blouse for casual outings.",
+            "rating": 4.7,
+            "price": 34.99,
+            "discount": 0,
+            "discountPercentage": 0,
+            "colors": ["Blue", "Light Blue"],
+            "sizes": ["S", "M", "L", "XL"],
+            "stock": 110,
+            "topSeller": true,
+            "newArrival": false,
+            "comments": [
+                {
+                    "rating": 4,
+                    "username": "Liam Red",
+                    "comment": "Nice blouse, but wrinkles easily.",
+                    "date": "2024-07-02"
+                }
+            ],
+            "type": "blouse",
+            "dressStyle": "casual"
+        },
+        {
+            "id": 9,
+            "image": "green-skirt.png",
+            "title": "GREEN PENCIL SKIRT",
+            "description": "A stylish pencil skirt for a chic look.",
+            "rating": 4.6,
+            "price": 44.99,
+            "discount": 10,
+            "discountPercentage": 20,
+            "colors": ["Green", "Dark Green"],
+            "sizes": ["XS", "S", "M", "L"],
+            "stock": 90,
+            "topSeller": false,
+            "newArrival": true,
+            "comments": [
+                {
+                    "rating": 4,
+                    "username": "Ethan Black",
+                    "comment": "Fits well, but the color is a bit off.",
+                    "date": "2024-07-03"
+                }
+            ],
+            "type": "skirt",
+            "dressStyle": "formal"
+        },
+        {
+            "id": 10,
+            "image": "red-heels.png",
+            "title": "RED HIGH HEELS",
+            "description": "Elegant red high heels for a night out.",
+            "rating": 4.8,
+            "price": 59.99,
+            "discount": 0,
+            "discountPercentage": 0,
+            "colors": ["Red"],
+            "sizes": ["6", "7", "8", "9"],
+            "stock": 80,
+            "topSeller": true,
+            "newArrival": false,
+            "comments": [
+                {
+                    "rating": 5,
+                    "username": "Ava White",
+                    "comment": "Very comfortable for heels!",
+                    "date": "2024-07-04"
+                }
+            ],
+            "type": "shoes",
+            "dressStyle": "formal"
+        },
+        {
+            "id": 11,
+            "image": "black-pants.png",
+            "title": "FORMAL BLACK PANTS",
+            "description": "Perfect black pants for office wear.",
+            "rating": 4.7,
+            "price": 39.99,
+            "discount": 5,
+            "discountPercentage": 10,
+            "colors": ["Black"],
+            "sizes": ["28", "30", "32", "34", "36"],
+            "stock": 130,
+            "topSeller": false,
+            "newArrival": false,
+            "comments": [
+                {
+                    "rating": 4,
+                    "username": "James Grey",
+                    "comment": "Good pants, but needs better fitting.",
+                    "date": "2024-07-01"
+                }
+            ],
+            "type": "pants",
+            "dressStyle": "formal"
+        },
+        {
+            "id": 12,
+            "image": "white-shirt.png",
+            "title": "WHITE CASUAL SHIRT",
+            "description": "A versatile white shirt for any occasion.",
+            "rating": 4.9,
+            "price": 25.99,
+            "discount": 0,
+            "discountPercentage": 0,
+            "colors": ["White"],
+            "sizes": ["S", "M", "L", "XL"],
+            "stock": 140,
+            "topSeller": true,
+            "newArrival": true,
+            "comments": [
+                {
+                    "rating": 5,
+                    "username": "Charlotte Green",
+                    "comment": "Love this shirt! So comfortable.",
+                    "date": "2024-07-06"
+                }
+            ],
+            "type": "shirt",
+            "dressStyle": "casual"
+        },
+        {
+            "id": 13,
+            "image": "brown-boots.png",
+            "title": "STYLISH BROWN BOOTS",
+            "description": "Durable and stylish boots for all seasons.",
+            "rating": 4.8,
+            "price": 69.99,
+            "discount": 0,
+            "discountPercentage": 0,
+            "colors": ["Brown"],
+            "sizes": ["7", "8", "9", "10", "11"],
+            "stock": 65,
+            "topSeller": true,
+            "newArrival": false,
+            "comments": [
+                {
+                    "rating": 5,
+                    "username": "Isabella Brown",
+                    "comment": "Amazing boots! Very comfortable.",
+                    "date": "2024-07-03"
+                }
+            ],
+            "type": "shoes",
+            "dressStyle": "casual"
+        },
+        {
+            "id": 14,
+            "image": "pink-dress.png",
+            "title": "CUTE PINK DRESS",
+            "description": "A cute pink dress perfect for summer.",
+            "rating": 4.7,
+            "price": 49.99,
+            "discount": 10,
+            "discountPercentage": 20,
+            "colors": ["Pink"],
+            "sizes": ["XS", "S", "M", "L"],
+            "stock": 100,
+            "topSeller": false,
+            "newArrival": true,
+            "comments": [
+                {
+                    "rating": 4,
+                    "username": "Mia Black",
+                    "comment": "Lovely dress, but a bit short.",
+                    "date": "2024-07-04"
+                }
+            ],
+            "type": "dress",
+            "dressStyle": "casual"
+        },
+        {
+            "id": 15,
+            "image": "gray-hoodie.png",
+            "title": "COMFY GRAY HOODIE",
+            "description": "A comfy hoodie for chilly days.",
+            "rating": 4.6,
+            "price": 29.99,
+            "discount": 5,
+            "discountPercentage": 10,
+            "colors": ["Gray", "Dark Gray"],
+            "sizes": ["S", "M", "L", "XL"],
+            "stock": 125,
+            "topSeller": true,
+            "newArrival": false,
+            "comments": [
+                {
+                    "rating": 4,
+                    "username": "Alexander Blue",
+                    "comment": "Very comfortable, but the zipper is stiff.",
+                    "date": "2024-07-05"
+                }
+            ],
+            "type": "hoodie",
+            "dressStyle": "casual"
+        },
+        {
+            "id": 16,
+            "image": "yellow-tshirt.png",
+            "title": "BRIGHT YELLOW T-SHIRT",
+            "description": "A bright t-shirt to stand out in the crowd.",
+            "rating": 4.8,
+            "price": 19.99,
+            "discount": 0,
+            "discountPercentage": 0,
+            "colors": ["Yellow"],
+            "sizes": ["S", "M", "L", "XL"],
+            "stock": 95,
+            "topSeller": false,
+            "newArrival": true,
+            "comments": [
+                {
+                    "rating": 5,
+                    "username": "Henry Red",
+                    "comment": "Great color and fit!",
+                    "date": "2024-07-02"
+                }
+            ],
+            "type": "tshirt",
+            "dressStyle": "casual"
+        },
+        {
+            "id": 17,
+            "image": "black-belt.png",
+            "title": "CLASSIC BLACK BELT",
+            "description": "A classic belt to complement any outfit.",
+            "rating": 4.9,
+            "price": 14.99,
+            "discount": 0,
+            "discountPercentage": 0,
+            "colors": ["Black"],
+            "sizes": ["S", "M", "L", "XL"],
+            "stock": 80,
+            "topSeller": true,
+            "newArrival": false,
+            "comments": [
+                {
+                    "rating": 5,
+                    "username": "Ella White",
+                    "comment": "Perfect belt for any occasion.",
+                    "date": "2024-07-03"
+                }
+            ],
+            "type": "accessories",
+            "dressStyle": "formal"
+        },
+        {
+            "id": 18,
+            "image": "blue-shorts.png",
+            "title": "COMFORTABLE BLUE SHORTS",
+            "description": "Perfect shorts for a casual day out.",
+            "rating": 4.7,
+            "price": 24.99,
+            "discount": 5,
+            "discountPercentage": 20,
+            "colors": ["Blue", "Light Blue"],
+            "sizes": ["S", "M", "L", "XL"],
+            "stock": 70,
+            "topSeller": false,
+            "newArrival": true,
+            "comments": [
+                {
+                    "rating": 4,
+                    "username": "Jack Green",
+                    "comment": "Nice shorts, but a bit tight.",
+                    "date": "2024-07-06"
+                }
+            ],
+            "type": "shorts",
+            "dressStyle": "casual"
+        },
+        {
+            "id": 19,
+            "image": "white-dress.png",
+            "title": "ELEGANT WHITE DRESS",
+            "description": "A beautiful white dress for special occasions.",
+            "rating": 4.8,
+            "price": 69.99,
+            "discount": 10,
+            "discountPercentage": 15,
+            "colors": ["White"],
+            "sizes": ["XS", "S", "M", "L"],
+            "stock": 85,
+            "topSeller": true,
+            "newArrival": false,
+            "comments": [
+                {
+                    "rating": 5,
+                    "username": "Lily Brown",
+                    "comment": "Stunning dress! Love it.",
+                    "date": "2024-07-01"
+                }
+            ],
+            "type": "dress",
+            "dressStyle": "formal"
+        },
+        {
+            "id": 20,
+            "image": "red-sweater.png",
+            "title": "COZY RED SWEATER",
+            "description": "Stay warm and stylish with this sweater.",
+            "rating": 4.6,
+            "price": 34.99,
+            "discount": 5,
+            "discountPercentage": 15,
+            "colors": ["Red"],
+            "sizes": ["S", "M", "L", "XL"],
+            "stock": 90,
+            "topSeller": false,
+            "newArrival": true,
+            "comments": [
+                {
+                    "rating": 4,
+                    "username": "Lucas Black",
+                    "comment": "Nice sweater, but pills easily.",
+                    "date": "2024-07-02"
+                }
+            ],
+            "type": "sweater",
+            "dressStyle": "casual"
+        }
+    ],
+    "customerComments": [
+        {
+            "id": 1,
+            "username":"John Doe",
+            "comment": "Great product! Fits perfectly!"
+        },
+        {
+            "id": 2,
+            "username":"Jane Smith",
+            "comment": "Good quality jeans, but runs a bit small."
+        },
+        {
+            "id": 3,
+            "username":"Emily Clark",
+            "comment": "Absolutely love this dress! Looks amazing."
+        },
+        {
+            "id": 4,
+            "username":"Michael Brown",
+            "comment": "Very comfortable and stylish sneakers!"
+        },
+        {
+            "id": 5,
+            "username":"Anna White",
+            "comment": "Nice jacket, but a bit expensive."
+        }
+    ]
+}

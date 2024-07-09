@@ -1,0 +1,76 @@
+import { BrowseDressImageWrapper, BrowseDressSection, BrowseDressTitle, BrowseDressWrapper, ImageBox } from '@/styles/BrowseDressStyle'
+import { SectionTitle } from '@/styles/ComponentStyle'
+import { useTranslations } from 'next-intl'
+import Image from 'next/image'
+import React from 'react'
+
+const BrowseDressStyle = () => {
+    const t = useTranslations();
+    return (
+        <>
+            <BrowseDressSection className='mt-5'>
+                <div className="row py-5">
+                    <div className="col-12">
+                        <SectionTitle>
+                            {t('browseByDressStyle')}
+                        </SectionTitle>
+                    </div>
+                    
+                </div>
+                <BrowseDressWrapper>
+                    <div className="row">
+                        <div className="col-12 col-md-4 mb-3">
+                            <ImageBox>
+                                <BrowseDressImageWrapper>
+                                    <Image src="/assets/banners/casual.png" alt="casual-dressstyle" fill className='object-fit-cover rounded-5' />
+                                    <BrowseDressTitle className='position-absolute mt-3 ms-3'>
+                                        {t('casual')}
+                                    </BrowseDressTitle>
+                                </BrowseDressImageWrapper>
+
+                            </ImageBox>
+                        </div>
+                        <div className="col-12 col-md-8 mb-3">
+                            <ImageBox>
+                                <BrowseDressImageWrapper>
+                                    <Image src="/assets/banners/formal.png" alt="formal-dressstyle" fill className='object-fit-cover rounded-5' />
+                                    <BrowseDressTitle className='position-absolute mt-3 ms-3'>
+                                        {t('formal')}
+                                    </BrowseDressTitle>
+                                </BrowseDressImageWrapper>
+
+                            </ImageBox>
+                        </div>
+                    </div>
+                    <div className="row mb-5">
+                        <div className="col-12 col-md-8 mb-3">
+                            <ImageBox>
+                                <BrowseDressImageWrapper>
+                                    <Image src="/assets/banners/party.png" alt="party-dressstyle" fill className='object-fit-cover rounded-5' />
+                                    <BrowseDressTitle className='position-absolute mt-3 ms-3'>
+                                        {t('party')}
+                                    </BrowseDressTitle>
+                                </BrowseDressImageWrapper>
+
+                            </ImageBox>
+                        </div>
+                        <div className="col-12 col-md-4 mb-3">
+                            <ImageBox>
+                                <BrowseDressImageWrapper>
+                                    <Image src="/assets/banners/gym.png" alt="gym-dressstyle" fill className='object-fit-cover rounded-5' />
+                                    <BrowseDressTitle className='position-absolute mt-3 ms-3'>
+                                        {t('gym')}
+                                    </BrowseDressTitle>
+                                </BrowseDressImageWrapper>
+
+                            </ImageBox>
+                        </div>
+
+                    </div>
+                </BrowseDressWrapper>
+            </BrowseDressSection>
+        </>
+    )
+}
+
+export default BrowseDressStyle

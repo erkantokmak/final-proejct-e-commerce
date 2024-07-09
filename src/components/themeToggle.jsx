@@ -15,7 +15,7 @@ const ThemeToggle = () => {
   };
 
   return (
-    <ToggleButton onClick={handleToggle} darkMode={{ darkMode }}>
+    <ToggleButton onClick={handleToggle} darkmode={{ darkMode }}>
       <IconContainer>
         {darkMode ? <FaSun size={24} /> : <FaMoon size={24} />}
       </IconContainer>

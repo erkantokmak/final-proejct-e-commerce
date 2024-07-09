@@ -8,6 +8,18 @@ export const GlobalStyles = createGlobalStyle`
     background-color: ${(props) => props.theme.background};
     color: ${(props) => props.theme.color};
   }
+  .landingPage {
+  background-image: url("/assets/banners/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 103px 0;
+  background-color: #f2f0f1;
+  @media screen and (max-width: 768px) {
+    background-image: none;
+    padding: 0;
+  }
+}
 `;
 
 export const SDiscountFirst = styled.div`
@@ -29,12 +41,13 @@ export const SDiscountButton = styled.button`
 
 
 export const HeaderContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: ${(props) => props.theme.background};
     color: ${(props) => props.theme.color};
-    padding: 24px 0px;
+
+`;
+
+export const HeaderIcon = styled.div`
+    color: ${(props) => props.theme.zcolor};
 `;
 
 export const SearchBarContainer = styled.div`
@@ -62,7 +75,6 @@ export const IconsWrapper = styled.div`
 
 
 export const SSearchBar = styled.input`
-    width: 577px;
     padding: 12px 16px 12px 40px;
     background-color: #F0F0F0;
     border: 1px solid #F0F0F0;
@@ -95,3 +107,17 @@ export const IconContainer = styled.div`
   width: 100%;
   height: 100%;
 `;
+
+export const SectionTitle = styled.h2`
+color: #000;
+text-align: center;
+font-family: "Integral CF Bold";
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+@media screen and (max-width: 768px) {
+    font-size: 32px;
+}
+`;
+

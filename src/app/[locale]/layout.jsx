@@ -9,9 +9,13 @@ import { getMessages } from "next-intl/server";
 import StyledComponentsRegistry from "@/lib/registry";
 
 import DiscountFirst from "@/components/DiscountFirst";
-import Navbar from "@/components/Header/Navbar";
+
 import ThemeWrapper from "@/themes/ThemeWrapper";
 import { GlobalStyles } from "@/styles/ComponentStyle";
+import Footer from "@/components/Footer/Footer";
+import { GlobalVariables } from "@/styles/global";
+import Navbar from "@/components/Header/Navbar";
+import '@smastrom/react-rating/style.css'
 
 export const metadata = {
     title: "Create Next App",
@@ -29,10 +33,12 @@ export default async function RootLayout(props) {
                     <StoreProvider>
                         <ThemeWrapper >
                         <GlobalStyles />
+                        <GlobalVariables />
                             <StyledComponentsRegistry>
                                 <DiscountFirst />
                                 <Navbar />
                                 {children}
+                                <Footer />
                             </StyledComponentsRegistry>
                         </ThemeWrapper>
                     </StoreProvider>

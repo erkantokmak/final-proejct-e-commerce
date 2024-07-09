@@ -3,7 +3,7 @@ import React from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import { IoMdSearch } from "react-icons/io";
 import { VscAccount } from "react-icons/vsc";
-import { IconsWrapper } from '../../styles/ComponentStyle'
+import {  IconsWrapper } from '../../styles/ComponentStyle'
 import ThemeToggle from '../themeToggle'
 
 const IconBox = () => {

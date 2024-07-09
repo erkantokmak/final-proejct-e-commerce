@@ -11,10 +11,9 @@ const Searchbar = () => {
         <>
             <SearchBarContainer>
                 <SearchBarIconContainer>
-                    <FontAwesomeIcon icon={faSearch} width={20.27} height={20.27}/>
+                <FontAwesomeIcon icon={faSearch} width={20.27} height={20.27}/>
                 </SearchBarIconContainer>
-                <SSearchBar type="text" placeholder={t('searchbar')} />
-
+                <SSearchBar type="text" placeholder={t('searchbar')} className='form-control'/>
             </SearchBarContainer>
         </>
     )

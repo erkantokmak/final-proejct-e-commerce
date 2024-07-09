@@ -1,7 +1,7 @@
 
 import React from 'react'
 import { SDiscountButton, SDiscountFirst } from '../styles/ComponentStyle'
-import { Container, Row } from '../styles/LayoutStyle'
+import { Container } from '../styles/LayoutStyle'
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 const DiscountFirst = () => {

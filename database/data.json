@@ -1,482 +1,493 @@
 {
-  "products": [
-    {
-      "id": "1",
-      "image": "tshirt-with-tape-details.png",
-      "title": "T-shirt with Tape Details",
-      "description": "Short sleeve t-shirt with tape details on the sleeves. Made of 100% cotton.",
-      "rating": 4.5,
-      "price": 120,
-      "discount": 0,
-      "discountPercentage": 0,
-      "colors": [
-        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
-      ],
-      "sizes": [
-        "Small,Medium,Large,X-Large"
-      ],
-      "stock": 93,
-      "topSeller": false,
-      "newArrival": true,
-      "alsoLike": false,
-      "comments": [
+    "products": [
         {
-          "rating": 4.5,
-          "username": "John Doe",
-          "comment": "Great product! Fits perfectly!",
-          "date": "2024-07-02"
-        }
-      ],
-      "type": "tshirt",
-      "category": "tshirts",
-      "dressStyle": "formal"
-    },
-    {
-      "id": "2",
-      "image": "skinny-fit-jeans.png",
-      "title": "Skinny Fit Jeans",
-      "description": "Comfortable and stylish blue jeans for everyday wear.",
-      "rating": 3.5,
-      "price": 240,
-      "discount": 0,
-      "discountPercentage": 20,
-      "colors": [
-        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
-      ],
-      "sizes": [
-        "Small,Medium,Large,X-Large"
-      ],
-      "stock": 150,
-      "topSeller": false,
-      "newArrival": true,
-      "alsoLike": false,
-      "comments": [
-        {
-          "rating": 4,
-          "username": "Jane Smith",
-          "comment": "Good quality jeans, but runs a bit small.",
-          "date": "2024-07-05"
-        }
-      ],
-      "type": "jeans",
-      "dressStyle": "casual"
-    },
-    {
-      "id": "3",
-      "image": "checkered-shirt.png",
-      "title": "Checkered Shirt",
-      "description": "A stunning black dress perfect for evening events.",
-      "rating": 4.5,
-      "price": 180,
-      "discount": 0,
-      "discountPercentage": 0,
-      "colors": [
-        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
-      ],
-      "sizes": [
-        "Small,Medium,Large,X-Large"
-      ],
-      "stock": 50,
-      "topSeller": true,
-      "newArrival": true,
-      "alsoLike": false,
-      "comments": [
-        {
-          "rating": 5,
-          "username": "Emily Clark",
-          "comment": "Absolutely love this dress! Looks amazing.",
-          "date": "2024-07-04"
+            "id": "1",
+            "image": "tshirt-with-tape-details.png",
+            "title": "T-shirt with Tape Details",
+            "description": "Short sleeve t-shirt with tape details on the sleeves. Made of 100% cotton.",
+            "rating": 4.5,
+            "price": 120,
+            "discount": 0,
+            "discountPercentage": 0,
+            "colors": [
+                "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+            ],
+            "sizes": [
+                "Small,Medium,Large,X-Large"
+            ],
+            "stock": 93,
+            "topSeller": false,
+            "newArrival": true,
+            "alsoLike": false,
+            "comments": [
+                {
+                    "rating": 4.5,
+                    "username": "John Doe",
+                    "comment": "Great product! Fits perfectly!",
+                    "date": "2024-07-02"
+                }
+            ],
+            "type": "tshirt",
+            "category": "T-Shirts",
+            "dressStyle": "formal"
         },
         {
-          "id": "1720612394339",
-          "rating": 5,
-          "username": "Erkan TOKMAK",
-          "comment": "Syndore Sağolsun",
-          "date": "2024-07-10T11:53:14.339Z"
+            "id": "2",
+            "image": "skinny-fit-jeans.png",
+            "title": "Skinny Fit Jeans",
+            "description": "Comfortable and stylish blue jeans for everyday wear.",
+            "rating": 3.5,
+            "price": 240,
+            "discount": 0,
+            "discountPercentage": 20,
+            "colors": [
+                "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+            ],
+            "sizes": [
+                "Small,Medium,Large,X-Large"
+            ],
+            "stock": 150,
+            "topSeller": false,
+            "newArrival": true,
+            "alsoLike": false,
+            "comments": [
+                {
+                    "rating": 4,
+                    "username": "Jane Smith",
+                    "comment": "Good quality jeans, but runs a bit small.",
+                    "date": "2024-07-05"
+                }
+            ],
+            "type": "jeans",
+            "category": "Jeans",
+            "dressStyle": "casual"
+        },
+        {
+            "id": "3",
+            "image": "checkered-shirt.png",
+            "title": "Checkered Shirt",
+            "description": "A stunning black dress perfect for evening events.",
+            "rating": 4.5,
+            "price": 180,
+            "discount": 0,
+            "discountPercentage": 0,
+            "colors": [
+                "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+            ],
+            "sizes": [
+                "Small,Medium,Large,X-Large"
+            ],
+            "stock": 50,
+            "topSeller": true,
+            "newArrival": true,
+            "alsoLike": false,
+            "comments": [
+                {
+                    "rating": 5,
+                    "username": "Emily Clark",
+                    "comment": "Absolutely love this dress! Looks amazing.",
+                    "date": "2024-07-04"
+                },
+                {
+                    "id": "1720612394339",
+                    "rating": 5,
+                    "username": "Erkan TOKMAK",
+                    "comment": "Syndore Sağolsun",
+                    "date": "2024-07-10T11:53:14.339Z"
+                }
+            ],
+            "type": "shirt",
+            "category": "Shirts",
+            "dressStyle": "formal"
+        },
+        {
+            "id": "4",
+            "image": "sleeve-striped-tshirt.png",
+            "title": "Sleeve Striped T-shirt",
+            "description": "Perfect t-shirt for everyday use.",
+            "rating": 4.5,
+            "price": 160,
+            "discount": 0,
+            "discountPercentage": 30,
+            "colors": [
+                "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+            ],
+            "sizes": [
+                "Small,Medium,Large,X-Large"
+            ],
+            "stock": 200,
+            "topSeller": false,
+            "newArrival": true,
+            "alsoLike": false,
+            "comments": [
+                {
+                    "id": "1",
+                    "rating": 5,
+                    "username": "Michael Brown",
+                    "comment": "Very comfortable and stylish sneakers!",
+                    "date": "2024-07-03"
+                },
+                {
+                    "id": "2",
+                    "rating": 3,
+                    "username": "Michael3 Brown",
+                    "comment": "Very comfortable and stylish sneakers!",
+                    "date": "2024-07-03"
+                },
+                {
+                    "id": "3",
+                    "rating": 5,
+                    "username": "Michael Brown",
+                    "comment": "Very comfortable and stylish sneakers!",
+                    "date": "2024-07-03"
+                },
+                {
+                    "id": "4",
+                    "rating": 3,
+                    "username": "Michael3 Brown",
+                    "comment": "Very comfortable and stylish sneakers!",
+                    "date": "2024-07-03"
+                },
+                {
+                    "id": "5",
+                    "rating": 5,
+                    "username": "Michael Brown",
+                    "comment": "Very comfortable and stylish sneakers!",
+                    "date": "2024-07-03"
+                },
+                {
+                    "id": "6",
+                    "rating": 3,
+                    "username": "Michael3 Brown",
+                    "comment": "Very comfortable and stylish sneakers!",
+                    "date": "2024-07-03"
+                },
+                {
+                    "id": "7",
+                    "rating": 5,
+                    "username": "Michael Brown",
+                    "comment": "Very comfortable and stylish sneakers!",
+                    "date": "2024-07-03"
+                },
+                {
+                    "id": "8",
+                    "rating": 3,
+                    "username": "Michael3 Brown",
+                    "comment": "Very comfortable and stylish sneakers!",
+                    "date": "2024-07-03"
+                },
+                {
+                    "id": "1720603815891",
+                    "rating": 5,
+                    "username": "Erkan TOKMAK",
+                    "comment": "Erkan tokmak test",
+                    "date": "2024-07-10T09:30:15.891Z"
+                },
+                {
+                    "id": "1720603824524",
+                    "rating": 5,
+                    "username": "Erkan TOKMAK",
+                    "comment": "asdfasdf",
+                    "date": "2024-07-10T09:30:24.524Z"
+                },
+                {
+                    "id": "1720603826828",
+                    "rating": 5,
+                    "username": "Erkan TOKMAK",
+                    "comment": "asdfasdf",
+                    "date": "2024-07-10T09:30:26.828Z"
+                },
+                {
+                    "id": "1720603827442",
+                    "rating": 5,
+                    "username": "Erkan TOKMAK",
+                    "comment": "asdfasdf",
+                    "date": "2024-07-10T09:30:27.442Z"
+                }
+            ],
+            "type": "tshirt ",
+            "category": "T-Shirts",
+            "dressStyle": "casual"
+        },
+        {
+            "id": "5",
+            "image": "vertical-striped-shirt.png",
+            "title": "Vertical Striped Shirt",
+            "description": "A classic striped shirt for a timeless look.",
+            "rating": 5,
+            "price": 232,
+            "discount": 0,
+            "discountPercentage": 20,
+            "colors": [
+                "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+            ],
+            "sizes": [
+                "Small,Medium,Large,X-Large"
+            ],
+            "stock": 75,
+            "topSeller": true,
+            "newArrival": false,
+            "alsoLike": false,
+            "comments": [
+                {
+                    "rating": 4,
+                    "username": "Anna White",
+                    "comment": "Nice jacket, but a bit expensive.",
+                    "date": "2024-07-06"
+                }
+            ],
+            "type": "shirt",
+            "category": "Shirts",
+            "dressStyle": "casual"
+        },
+        {
+            "id": "6",
+            "image": "courage-graphic-tshirt.png",
+            "title": "Courage Graphic T-shirt",
+            "description": "A graphic t-shirt to inspire courage and strength.",
+            "rating": 4,
+            "price": 145,
+            "discount": 0,
+            "discountPercentage": 0,
+            "colors": [
+                "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+            ],
+            "sizes": [
+                "Small,Medium,Large,X-Large"
+            ],
+            "stock": 120,
+            "topSeller": true,
+            "newArrival": true,
+            "alsoLike": false,
+            "comments": [
+                {
+                    "rating": 5,
+                    "username": "Olivia Green",
+                    "comment": "Perfect hat for the summer!",
+                    "date": "2024-07-01"
+                }
+            ],
+            "type": "tshirt",
+            "category": "T-Shirts",
+            "dressStyle": "casual"
+        },
+        {
+            "id": "7",
+            "image": "loose-fit-bermuda-shorts.png",
+            "title": "Loose Fit Bermuda Shorts",
+            "description": "Comfortable and stylish shorts for a casual look.",
+            "rating": 3,
+            "price": 80,
+            "discount": 0,
+            "discountPercentage": 0,
+            "colors": [
+                "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+            ],
+            "sizes": [
+                "Small,Medium,Large,X-Large"
+            ],
+            "stock": 60,
+            "topSeller": true,
+            "newArrival": false,
+            "alsoLike": false,
+            "comments": [
+                {
+                    "rating": 5,
+                    "username": "Sophia Blue",
+                    "comment": "Absolutely love this dress! Looks amazing.",
+                    "date": "2024-07-05"
+                }
+            ],
+            "type": "shorts",
+            "category": "Shorts",
+            "dressStyle": "casual"
+        },
+        {
+            "id": "8",
+            "image": "faded-skinny-jeans.png",
+            "title": "Faded Skinny Jeans",
+            "description": "Stylish skinny jeans for a trendy look.",
+            "rating": 4.5,
+            "price": 210,
+            "discount": 0,
+            "discountPercentage": 0,
+            "colors": [
+                "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+            ],
+            "sizes": [
+                "Small,Medium,Large,X-Large"
+            ],
+            "stock": 110,
+            "topSeller": true,
+            "newArrival": false,
+            "alsoLike": false,
+            "comments": [
+                {
+                    "rating": 4,
+                    "username": "Liam Red",
+                    "comment": "Nice blouse, but wrinkles easily.",
+                    "date": "2024-07-02"
+                }
+            ],
+            "type": "jeans",
+            "category": "Jeans",
+            "dressStyle": "casual"
+        },
+        {
+            "id": "9",
+            "image": "gradient-graphic-tshirt.png",
+            "title": "Gradient Graphic T-shirt",
+            "description": "A unique graphic t-shirt with a gradient design.",
+            "rating": 3.5,
+            "price": 145,
+            "discount": 0,
+            "discountPercentage": 0,
+            "colors": [
+                "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+            ],
+            "sizes": [
+                "Small,Medium,Large,X-Large"
+            ],
+            "stock": 90,
+            "topSeller": false,
+            "newArrival": true,
+            "alsoLike": true,
+            "comments": [
+                {
+                    "rating": 4,
+                    "username": "Ethan Black",
+                    "comment": "Fits well, but the color is a bit off.",
+                    "date": "2024-07-03"
+                }
+            ],
+            "type": "tshirt",
+            "category": "T-Shirts",
+            "dressStyle": "formal"
+        },
+        {
+            "id": "10",
+            "image": "polo-with-tipping-details.png",
+            "title": "Polo with Tipping Details",
+            "description": "A classic polo shirt with tipping details on the collar and sleeves.",
+            "rating": 4.5,
+            "price": 180,
+            "discount": 0,
+            "discountPercentage": 0,
+            "colors": [
+                "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+            ],
+            "sizes": [
+                "Small,Medium,Large,X-Large"
+            ],
+            "stock": 80,
+            "topSeller": true,
+            "newArrival": false,
+            "alsoLike": true,
+            "comments": [
+                {
+                    "rating": 5,
+                    "username": "Ava White",
+                    "comment": "Very comfortable for heels!",
+                    "date": "2024-07-04"
+                }
+            ],
+            "type": "tshirts",
+            "category": "T-Shirts",
+            "dressStyle": "formal"
+        },
+        {
+            "id": "11",
+            "image": "black-stripped-tshirt.png",
+            "title": "Black Striped T-shirt",
+            "description": "A classic black t-shirt with striped design.",
+            "rating": 5,
+            "price": 150,
+            "discount": 0,
+            "discountPercentage": 30,
+            "colors": [
+                "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+            ],
+            "sizes": [
+                "Small,Medium,Large,X-Large"
+            ],
+            "stock": 130,
+            "topSeller": true,
+            "newArrival": false,
+            "alsoLike": true,
+            "comments": [
+                {
+                    "rating": 4,
+                    "username": "James Grey",
+                    "comment": "Great product! Fits perfectly!",
+                    "date": "2024-07-01"
+                }
+            ],
+            "type": "tshirt",
+            "category": "T-Shirts",
+            "dressStyle": "formal"
+        },
+        {
+            "id": "12",
+            "image": "polo-with-contrast-trims.png",
+            "title": "Polo with Contrast Trims",
+            "description": "A classic polo shirt with contrast trims on the collar and sleeves.",
+            "rating": 4,
+            "price": 212,
+            "discount": 0,
+            "discountPercentage": 20,
+            "colors": [
+                "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
+            ],
+            "sizes": [
+                "Small,Medium,Large,X-Large"
+            ],
+            "stock": 130,
+            "topSeller": true,
+            "newArrival": false,
+            "alsoLike": true,
+            "comments": [
+                {
+                    "rating": 4,
+                    "username": "Emily Clark",
+                    "comment": "Good quality jeans, but runs a bit small.",
+                    "date": "2024-07-01"
+                }
+            ],
+            "type": "tshirt",
+            "category": "T-Shirts",
+            "dressStyle": "formal"
         }
-      ],
-      "type": "shirt",
-      "dressStyle": "formal"
-    },
-    {
-      "id": "4",
-      "image": "sleeve-striped-tshirt.png",
-      "title": "Sleeve Striped T-shirt",
-      "description": "Perfect t-shirt for everyday use.",
-      "rating": 4.5,
-      "price": 160,
-      "discount": 0,
-      "discountPercentage": 30,
-      "colors": [
-        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
-      ],
-      "sizes": [
-        "Small,Medium,Large,X-Large"
-      ],
-      "stock": 200,
-      "topSeller": false,
-      "newArrival": true,
-      "alsoLike": false,
-      "comments": [
+    ],
+    "customerComments": [
         {
-          "id": "1",
-          "rating": 5,
-          "username": "Michael Brown",
-          "comment": "Very comfortable and stylish sneakers!",
-          "date": "2024-07-03"
+            "id": "1",
+            "username": "John Doe",
+            "comment": "Great product! Fits perfectly!",
+            "rating": 5
         },
         {
-          "id": "2",
-          "rating": 3,
-          "username": "Michael3 Brown",
-          "comment": "Very comfortable and stylish sneakers!",
-          "date": "2024-07-03"
+            "id": "2",
+            "username": "Jane Smith",
+            "comment": "Good quality jeans, but runs a bit small.",
+            "rating": 5
         },
         {
-          "id": "3",
-          "rating": 5,
-          "username": "Michael Brown",
-          "comment": "Very comfortable and stylish sneakers!",
-          "date": "2024-07-03"
+            "id": "3",
+            "username": "Emily Clark",
+            "comment": "Absolutely love this dress! Looks amazing.",
+            "rating": 5
         },
         {
-          "id": "4",
-          "rating": 3,
-          "username": "Michael3 Brown",
-          "comment": "Very comfortable and stylish sneakers!",
-          "date": "2024-07-03"
+            "id": "4",
+            "username": "Michael Brown",
+            "comment": "Very comfortable and stylish sneakers!",
+            "rating": 5
         },
         {
-          "id": "5",
-          "rating": 5,
-          "username": "Michael Brown",
-          "comment": "Very comfortable and stylish sneakers!",
-          "date": "2024-07-03"
-        },
-        {
-          "id": "6",
-          "rating": 3,
-          "username": "Michael3 Brown",
-          "comment": "Very comfortable and stylish sneakers!",
-          "date": "2024-07-03"
-        },
-        {
-          "id": "7",
-          "rating": 5,
-          "username": "Michael Brown",
-          "comment": "Very comfortable and stylish sneakers!",
-          "date": "2024-07-03"
-        },
-        {
-          "id": "8",
-          "rating": 3,
-          "username": "Michael3 Brown",
-          "comment": "Very comfortable and stylish sneakers!",
-          "date": "2024-07-03"
-        },
-        {
-          "id": "1720603815891",
-          "rating": 5,
-          "username": "Erkan TOKMAK",
-          "comment": "Erkan tokmak test",
-          "date": "2024-07-10T09:30:15.891Z"
-        },
-        {
-          "id": "1720603824524",
-          "rating": 5,
-          "username": "Erkan TOKMAK",
-          "comment": "asdfasdf",
-          "date": "2024-07-10T09:30:24.524Z"
-        },
-        {
-          "id": "1720603826828",
-          "rating": 5,
-          "username": "Erkan TOKMAK",
-          "comment": "asdfasdf",
-          "date": "2024-07-10T09:30:26.828Z"
-        },
-        {
-          "id": "1720603827442",
-          "rating": 5,
-          "username": "Erkan TOKMAK",
-          "comment": "asdfasdf",
-          "date": "2024-07-10T09:30:27.442Z"
+            "id": "5",
+            "username": "Anna White",
+            "comment": "Nice jacket, but a bit expensive.",
+            "rating": 5
         }
-      ],
-      "type": "tshirt ",
-      "dressStyle": "casual"
-    },
-    {
-      "id": "5",
-      "image": "vertical-striped-shirt.png",
-      "title": "Vertical Striped Shirt",
-      "description": "A classic striped shirt for a timeless look.",
-      "rating": 5,
-      "price": 232,
-      "discount": 0,
-      "discountPercentage": 20,
-      "colors": [
-        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
-      ],
-      "sizes": [
-        "Small,Medium,Large,X-Large"
-      ],
-      "stock": 75,
-      "topSeller": true,
-      "newArrival": false,
-      "alsoLike": false,
-      "comments": [
-        {
-          "rating": 4,
-          "username": "Anna White",
-          "comment": "Nice jacket, but a bit expensive.",
-          "date": "2024-07-06"
-        }
-      ],
-      "type": "shirt",
-      "dressStyle": "casual"
-    },
-    {
-      "id": "6",
-      "image": "courage-graphic-tshirt.png",
-      "title": "Courage Graphic T-shirt",
-      "description": "A graphic t-shirt to inspire courage and strength.",
-      "rating": 4,
-      "price": 145,
-      "discount": 0,
-      "discountPercentage": 0,
-      "colors": [
-        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
-      ],
-      "sizes": [
-        "Small,Medium,Large,X-Large"
-      ],
-      "stock": 120,
-      "topSeller": true,
-      "newArrival": true,
-      "alsoLike": false,
-      "comments": [
-        {
-          "rating": 5,
-          "username": "Olivia Green",
-          "comment": "Perfect hat for the summer!",
-          "date": "2024-07-01"
-        }
-      ],
-      "type": "tshirt",
-      "dressStyle": "casual"
-    },
-    {
-      "id": "7",
-      "image": "loose-fit-bermuda-shorts.png",
-      "title": "Loose Fit Bermuda Shorts",
-      "description": "Comfortable and stylish shorts for a casual look.",
-      "rating": 3,
-      "price": 80,
-      "discount": 0,
-      "discountPercentage": 0,
-      "colors": [
-        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
-      ],
-      "sizes": [
-        "Small,Medium,Large,X-Large"
-      ],
-      "stock": 60,
-      "topSeller": true,
-      "newArrival": false,
-      "alsoLike": false,
-      "comments": [
-        {
-          "rating": 5,
-          "username": "Sophia Blue",
-          "comment": "Absolutely love this dress! Looks amazing.",
-          "date": "2024-07-05"
-        }
-      ],
-      "type": "shorts",
-      "dressStyle": "casual"
-    },
-    {
-      "id": "8",
-      "image": "faded-skinny-jeans.png",
-      "title": "Faded Skinny Jeans",
-      "description": "Stylish skinny jeans for a trendy look.",
-      "rating": 4.5,
-      "price": 210,
-      "discount": 0,
-      "discountPercentage": 0,
-      "colors": [
-        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
-      ],
-      "sizes": [
-        "Small,Medium,Large,X-Large"
-      ],
-      "stock": 110,
-      "topSeller": true,
-      "newArrival": false,
-      "alsoLike": false,
-      "comments": [
-        {
-          "rating": 4,
-          "username": "Liam Red",
-          "comment": "Nice blouse, but wrinkles easily.",
-          "date": "2024-07-02"
-        }
-      ],
-      "type": "jeans",
-      "dressStyle": "casual"
-    },
-    {
-      "id": "9",
-      "image": "gradient-graphic-tshirt.png",
-      "title": "Gradient Graphic T-shirt",
-      "description": "A unique graphic t-shirt with a gradient design.",
-      "rating": 3.5,
-      "price": 145,
-      "discount": 0,
-      "discountPercentage": 0,
-      "colors": [
-        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
-      ],
-      "sizes": [
-        "Small,Medium,Large,X-Large"
-      ],
-      "stock": 90,
-      "topSeller": false,
-      "newArrival": true,
-      "alsoLike": true,
-      "comments": [
-        {
-          "rating": 4,
-          "username": "Ethan Black",
-          "comment": "Fits well, but the color is a bit off.",
-          "date": "2024-07-03"
-        }
-      ],
-      "type": "tshirt",
-      "dressStyle": "formal"
-    },
-    {
-      "id": "10",
-      "image": "polo-with-tipping-details.png",
-      "title": "Polo with Tipping Details",
-      "description": "A classic polo shirt with tipping details on the collar and sleeves.",
-      "rating": 4.5,
-      "price": 180,
-      "discount": 0,
-      "discountPercentage": 0,
-      "colors": [
-        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
-      ],
-      "sizes": [
-        "Small,Medium,Large,X-Large"
-      ],
-      "stock": 80,
-      "topSeller": true,
-      "newArrival": false,
-      "alsoLike": true,
-      "comments": [
-        {
-          "rating": 5,
-          "username": "Ava White",
-          "comment": "Very comfortable for heels!",
-          "date": "2024-07-04"
-        }
-      ],
-      "type": "tshirts",
-      "dressStyle": "formal"
-    },
-    {
-      "id": "11",
-      "image": "black-stripped-tshirt.png",
-      "title": "Black Striped T-shirt",
-      "description": "A classic black t-shirt with striped design.",
-      "rating": 5,
-      "price": 150,
-      "discount": 0,
-      "discountPercentage": 30,
-      "colors": [
-        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
-      ],
-      "sizes": [
-        "Small,Medium,Large,X-Large"
-      ],
-      "stock": 130,
-      "topSeller": true,
-      "newArrival": false,
-      "alsoLike": true,
-      "comments": [
-        {
-          "rating": 4,
-          "username": "James Grey",
-          "comment": "Great product! Fits perfectly!",
-          "date": "2024-07-01"
-        }
-      ],
-      "type": "tshirt",
-      "dressStyle": "formal"
-    },
-    {
-      "id": "12",
-      "image": "polo-with-contrast-trims.png",
-      "title": "Polo with Contrast Trims",
-      "description": "A classic polo shirt with contrast trims on the collar and sleeves.",
-      "rating": 4,
-      "price": 212,
-      "discount": 0,
-      "discountPercentage": 20,
-      "colors": [
-        "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black"
-      ],
-      "sizes": [
-        "Small,Medium,Large,X-Large"
-      ],
-      "stock": 130,
-      "topSeller": true,
-      "newArrival": false,
-      "alsoLike": true,
-      "comments": [
-        {
-          "rating": 4,
-          "username": "Emily Clark",
-          "comment": "Good quality jeans, but runs a bit small.",
-          "date": "2024-07-01"
-        }
-      ],
-      "type": "tshirt",
-      "dressStyle": "formal"
-    }
-  ],
-  "customerComments": [
-    {
-      "id": "1",
-      "username": "John Doe",
-      "comment": "Great product! Fits perfectly!",
-      "rating": 5
-    },
-    {
-      "id": "2",
-      "username": "Jane Smith",
-      "comment": "Good quality jeans, but runs a bit small.",
-      "rating": 5
-    },
-    {
-      "id": "3",
-      "username": "Emily Clark",
-      "comment": "Absolutely love this dress! Looks amazing.",
-      "rating": 5
-    },
-    {
-      "id": "4",
-      "username": "Michael Brown",
-      "comment": "Very comfortable and stylish sneakers!",
-      "rating": 5
-    },
-    {
-      "id": "5",
-      "username": "Anna White",
-      "comment": "Nice jacket, but a bit expensive.",
-      "rating": 5
-    }
-  ]
+    ]
 }

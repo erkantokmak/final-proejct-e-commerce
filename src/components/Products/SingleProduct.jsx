@@ -4,7 +4,6 @@ import Image from 'next/image'
 import React from 'react'
 
 const SingleProduct = ({ image, title, rating, price, discountPercentage }) => {
-
     
     return (
         <>

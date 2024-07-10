@@ -25,8 +25,8 @@ export const GlobalStyles = createGlobalStyle`
 export const SDiscountFirst = styled.div`
     width: 100%;
     padding: 5px 0;
-    background-color: ${(props) => props.theme.background};
-    color: ${(props) => props.theme.color};
+    background-color: #000;
+    color: #fff;
     text-align:center;
 `;
 

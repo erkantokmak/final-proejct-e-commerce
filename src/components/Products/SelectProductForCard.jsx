@@ -15,11 +15,14 @@ import {
     QuantityValue
 } from '@/styles/ProductStyle';
 import { addItemToCart } from '@/lib/features/cart/cartSlice';
+import useAuth from '@/lib/Hooks/useAuth';
+import { redirect } from 'next/navigation';
 
 const SelectProductForCard = ({ product }) => {
     const t = useTranslations();
     const dispatch = useDispatch();
 
+    const {currentUser} = useAuth();
     const [selectedColor, setSelectedColor] = useState(product.colors[0]);
     const [selectedSize, setSelectedSize] = useState(product.sizes[0]);
     const [quantity, setQuantity] = useState(1);
@@ -33,7 +36,7 @@ const SelectProductForCard = ({ product }) => {
             quantity: quantity,
         };
         dispatch(addItemToCart(cartItem)); 
-        console.log(cartItem);
+        redirect('/cart');
     };
 
     const parsedSizes = (product) => {
@@ -106,8 +109,9 @@ const SelectProductForCard = ({ product }) => {
                         </QuantityValue>
                         <QuantityPlus type="button" onClick={() => setQuantity(quantity + 1)}>+</QuantityPlus>
                     </div>
-
-                    <AddToCartButton type="submit">Add to Cart</AddToCartButton>
+                    
+                    {currentUser ?  <AddToCartButton type="submit">Add to Cart</AddToCartButton> :  <AddToCartButton type="submit" disabled>Add to Cart</AddToCartButton>}
+                    
                 </div>
             </form>
         </div>

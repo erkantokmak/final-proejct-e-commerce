@@ -11,7 +11,7 @@ const NewArrivals = async () => {
 
     return (
         <>
-            <div className="row my-5">
+            <div className="row my-5" id="newArrivals">
                 <SectionTitle>
                     {t('newArrivalsTitle')}
                 </SectionTitle>

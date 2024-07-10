@@ -1,5 +1,7 @@
 "use client"
 import { postComment } from "@/api/server";
+import useAuth from "@/lib/Hooks/useAuth";
+import { Link } from "@/navigation";
 import { ReviewButton } from "@/styles/CommentStyle";
 import { Rating } from "@smastrom/react-rating"
 import { useTranslations } from "next-intl"
@@ -8,7 +10,7 @@ import { useRef, useState } from "react";
 
 const WriteCommentModal = ({ data }) => {
     const t = useTranslations();
-
+    const {currentUser} = useAuth();
     const [rate, setRate] = useState(0);
     const [comment, setComment] = useState('');
 
@@ -45,7 +47,7 @@ const WriteCommentModal = ({ data }) => {
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                            <form onSubmit={handleSubmit}>
+                        {currentUser ? (<form onSubmit={handleSubmit}>
                                 <Rating
                                     style={{ maxWidth: 180 }}
                                     value={rate}
@@ -58,7 +60,8 @@ const WriteCommentModal = ({ data }) => {
                                     onChange={(e) => setComment(e.target.value)}
                                 ></textarea>
                                 <button type="submit" className="btn btn-primary">Save changes</button>
-                            </form>
+                            </form>): <><p>{t('loginPls')}</p><Link href="/login"><ReviewButton type="button" data-bs-toggle="modal" data-bs-target="#reviewModal">{t('login')}</ReviewButton></Link> </>}
+                            
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>

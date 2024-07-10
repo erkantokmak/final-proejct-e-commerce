@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import { useTranslations } from "next-intl";
 import { HeroButton, HeroSub, HeroSubText, HeroText, HeroTitle, StyledLandingMobile } from "@/styles/HeroStyle";
+import { Link } from "@/navigation";
 
 const Hero = () => {
     const t = useTranslations();
@@ -15,9 +16,11 @@ const Hero = () => {
                     <HeroText>
                         {t("bannerText")}
                     </HeroText>
+                    <Link href="/shop">
                     <HeroButton>
                         {t("bannerButton")}
                     </HeroButton>
+                    </Link>
                     <div className="pt-4 row">
                         <div className="col-md-4 col-6 text-md-start text-center">
                             <HeroSub>

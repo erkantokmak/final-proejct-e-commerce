@@ -1,7 +1,15 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const getItemLocalStorage = () => {
+    if (typeof window !== "undefined") {
+        const user = window.localStorage.getItem("cartItem");
+        return user ? JSON.parse(user) : false;
+    }
+    return false;
+};
+
 const initialState = {
-    cartItem: []
+    cartItem: getItemLocalStorage()
 }
 
 const cartSlice = createSlice({
@@ -9,7 +17,10 @@ const cartSlice = createSlice({
     initialState,
     reducers: {
         addItemToCart: (state, action) => {
-            state.cartItem.push(action.payload)
+            state.cartItem = action.payload;
+            if (typeof window !== "undefined") {
+                window.localStorage.setItem("cartItem", JSON.stringify(state.cartItem));
+            }
         }
     }
 });

@@ -8,7 +8,7 @@ const BrowseDressStyle = () => {
     const t = useTranslations();
     return (
         <>
-            <BrowseDressSection className='mt-5'>
+            <BrowseDressSection className='mt-5' id="dressByStyle">
                 <div className="row py-5">
                     <div className="col-12">
                         <SectionTitle>

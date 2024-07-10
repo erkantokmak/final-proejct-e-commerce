@@ -16,6 +16,7 @@ import Footer from "@/components/Footer/Footer";
 import { GlobalVariables } from "@/styles/global";
 import Navbar from "@/components/Header/Navbar";
 import '@smastrom/react-rating/style.css'
+import { ToastContainer } from "react-toastify";
 
 export const metadata = {
     title: "SHOP.CO",
@@ -39,6 +40,7 @@ export default async function RootLayout(props) {
                                 <Navbar />
                                 {children}
                                 <Footer />
+                                <ToastContainer />
                             </StyledComponentsRegistry>
                         </ThemeWrapper>
                     </StoreProvider>

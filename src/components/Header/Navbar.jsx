@@ -1,10 +1,11 @@
-import Link from "next/link";
+
 import { FaChevronDown } from "react-icons/fa";
 import IconBox from "./IconBox";
 import Searchbar from './Searchbar'
 import { useTranslations } from "next-intl";
 import { HeaderContainer } from "@/styles/ComponentStyle";
 import { Container } from "@/styles/LayoutStyle";
+import { Link } from "@/navigation";
 
 
 const Navbar = () => {
@@ -36,7 +37,7 @@ const Navbar = () => {
                                 <Link
                                     className="nav-link d-flex gap-1"
                                     aria-current="page"
-                                    href="#"
+                                    href="/shop"
                                 >
                                     {t('shop')}
                                     <span>
@@ -45,17 +46,17 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" href="#">
+                                <Link className="nav-link" href="#onSale">
                                     {t('onsale')}
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" href="#">
+                                <Link className="nav-link" href="#newArrivals">
                                     {t('newArrivals')}
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" href="#">
+                                <Link className="nav-link" href="#dressByStyle">
                                     {t('brands')}
                                 </Link>
                             </li>

@@ -12,7 +12,7 @@ const NewSelling = async () => {
     const t = await getTranslations();
   return (
     <>
-            <div className="row my-5">
+            <div className="row my-5" id="onSale">
                 <SectionTitle>
                     {t('topSellingTitle')}
                 </SectionTitle>

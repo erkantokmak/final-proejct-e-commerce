@@ -2,8 +2,8 @@
 import { useSelector } from "react-redux"
 
 const Cart = () => {
-    const cartItems = useSelector(state => state.cart.cart)
-    console.log(cartItems + 'cartItems cart page')
+    const cartItems = useSelector(state => state.cart.cartItem)
+    console.log(cartItems , 'cartItems cart page')
     return (
        <>
         <div className="row">

@@ -3,7 +3,7 @@ import { postComment } from "@/api/server";
 import { ReviewButton } from "@/styles/CommentStyle";
 import { Rating } from "@smastrom/react-rating"
 import { useTranslations } from "next-intl"
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 
 const WriteCommentModal = ({ data }) => {
@@ -12,10 +12,11 @@ const WriteCommentModal = ({ data }) => {
     const [rate, setRate] = useState(0);
     const [comment, setComment] = useState('');
 
+    const reviewButton = useRef()
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-
             const res = await postComment(data.id, rate, comment);
             if (res.status === 200) {
                 alert('Comment added successfully')
@@ -23,39 +24,44 @@ const WriteCommentModal = ({ data }) => {
         } catch (error) {
             alert(error.message)
         }
+        reviewButton.current.click();
     }
 
 
     return (
         <>
-            <ReviewButton type="button" data-bs-toggle="modal" data-bs-target="#reviewModal">{t('writeReview')}</ReviewButton>
+            <ReviewButton ref={reviewButton} type="button" data-bs-toggle="modal" data-bs-target="#reviewModal">{t('writeReview')}</ReviewButton>
             {/* <button type="button" data-bs-toggle="modal" data-bs-target="#reviewModal">{t('writeReview')}</button> */}
 
             <div className="modal fade"
-                id="writeReview"
+                id="reviewModal"
                 tabIndex="-1"
-                aria-labelledby="exampleModalLabel"
+                aria-labelledby="reviewModal"
                 aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h1 className="modal-title fs-5" id="exampleModalLabel">{t('writeReview')}</h1>
+                            <h1 className="modal-title fs-5" id="reviewModal">{t('writeReview')}</h1>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
                             <form onSubmit={handleSubmit}>
-                                <Rating onChange={setRate} />
+                                <Rating
+                                    style={{ maxWidth: 180 }}
+                                    value={rate}
+                                    onChange={setRate}
+                                />
                                 <textarea
                                     className="form-control mt-3"
                                     placeholder={t('writeReview')}
                                     value={comment}
                                     onChange={(e) => setComment(e.target.value)}
                                 ></textarea>
+                                <button type="submit" className="btn btn-primary">Save changes</button>
                             </form>
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" className="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </div>

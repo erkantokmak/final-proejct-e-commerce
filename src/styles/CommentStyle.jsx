@@ -26,6 +26,24 @@ font-weight: 700;
 line-height: normal;
 `;
 
+export const CommentText = styled.p`
+color: rgba(0, 0, 0, 0.60);
+font-family: 'Satoshi';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+`;
+
+export const PostedDateText = styled.p`
+color: rgba(0, 0, 0, 0.60);
+font-family: 'Satoshi';
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px;
+`;
+
 export const AllReviewCount = styled.span`
 color: rgba(0, 0, 0, 0.60);
 leading-trim: both;

@@ -1,3 +1,6 @@
+"use server"
+import { revalidatePath } from "next/cache";
+
 const URL = "http://localhost:3000"
 
 export const getNewArrivals = async () => {
@@ -39,29 +42,57 @@ export const getComments = async (id) => {
     return data;
 }
 
-export const postComment = async (id,rate ,comment) => {
-    const product = getProductDetails(id);
+// export const postComment = async (id,rate ,comment) => {
+//     const product = getProductDetails(id);
 
-    if(!product){
-        throw new Error('Product not found');
-    }
+//     const newComment = {
+//         id: String(new Date().getTime()),
+//         rating: rate,
+//         username: "Erkan TOKMAK",
+//         comment: comment,
+//         date: new Date().toISOString(),
+//     }
+
+//     const updatedComment = [...product, newComment];
+
+//     const res = await fetch(`${URL}/products/${id}`, {
+//         method: 'PUT',
+//         headers: {
+//             'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify(updatedComment),
+//     });
+//     return res.json();
+// }
+
+
+export const postComment = async (id, rate, comment) => {
+    const product = await getProductDetails(id);
 
     const newComment = {
         id: String(new Date().getTime()),
-        user_id: '1',
-        comment: comment,
         rating: rate,
+        username: "Erkan TOKMAK",
+        comment: comment,
         date: new Date().toISOString(),
     }
 
-    const updatedComment = [...product.comments, newComment];
+    const updatedComments = product.comments ? [...product.comments, newComment] : [newComment];
 
-    const res = await fetch(`${URL}/products/${id}/comments`, {
-        method: 'POST',
+    const updatedProduct = {
+        ...product,
+        comments: updatedComments
+    };
+
+    const res = await fetch(`${URL}/products/${id}`, {
+        method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(updatedComment),
+        body: JSON.stringify(updatedProduct),
     });
+
+    revalidatePath("/shop/[id]", "page");
+
     return res.json();
 }

@@ -3,7 +3,7 @@ import { Rating } from "@smastrom/react-rating";
 import Image from "next/image";
 
 
-const Comment = ({ customer }) => {
+const Comment = ({customer}) => {
   return (
     <div className="rounded-4 border p-6 mb-4 p-4">
       <Rating

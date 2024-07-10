@@ -29,8 +29,39 @@ export const getCustomerComments = async () => {
 
 export const getProductDetails = async (id) => {
     const res = await fetch(`${URL}/products/${id}`, {cache: "no-store"});
-  
     const data = await res.json();
     return data;
 }
 
+export const getComments = async (id) => {
+    const res = await fetch(`${URL}/products/${id}/comments`, {cache: "no-store"});
+    const data = await res.json();
+    return data;
+}
+
+export const postComment = async (id,rate ,comment) => {
+    const product = getProductDetails(id);
+
+    if(!product){
+        throw new Error('Product not found');
+    }
+
+    const newComment = {
+        id: String(new Date().getTime()),
+        user_id: '1',
+        comment: comment,
+        rating: rate,
+        date: new Date().toISOString(),
+    }
+
+    const updatedComment = [...product.comments, newComment];
+
+    const res = await fetch(`${URL}/products/${id}/comments`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(updatedComment),
+    });
+    return res.json();
+}

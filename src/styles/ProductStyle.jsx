@@ -129,8 +129,8 @@ export const ProductDetailSizes = styled.label`
     padding: 12px 24px;
     border-radius: 62px;
     border: none;
-    background-color: ${(props) => (props.size === props.selectedSize ? 'black ;' : '#F0F0F0')};
-    color: ${(props) => (props.size === props.selectedSize ? 'white' : 'rgba(0, 0, 0, 0.6)')};
+    background-color: ${(props) => (props.size === props.selectedsize ? 'black ;' : '#F0F0F0')};
+    color: ${(props) => (props.size === props.selectedsize ? 'white' : 'rgba(0, 0, 0, 0.6)')};
     cursor: pointer;
 `;
 
@@ -154,13 +154,6 @@ border-top-right-radius: 62px;
 border-bottom-right-radius: 62px;
 `;
 
-export const QuantityInput = styled.input`
-background-color: #F0F0F0;
-outline: none;
-border: none;
-text-align: center;
-width: auto;
-`;
 
 export const QuantityValue = styled.p`
 background-color: #F0F0F0;

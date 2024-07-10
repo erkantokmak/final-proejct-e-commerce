@@ -2,8 +2,19 @@
 import { useTranslations } from 'next-intl';
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
-import styles from './ProductDetail.module.css'
-import { AddToCartButton, ProductDetailColorCheck, ProductDetailColorInput, ProductDetailColors, ProductDetailSelectText, ProductDetailSizeInput, ProductDetailSizes, QuantitiyMinus, QuantityInput, QuantityPlus, QuantityValue } from '@/styles/ProductStyle';
+import {
+    AddToCartButton,
+    ProductDetailColorCheck,
+    ProductDetailColorInput,
+    ProductDetailColors,
+    ProductDetailSelectText,
+    ProductDetailSizeInput,
+    ProductDetailSizes,
+    QuantitiyMinus,
+    QuantityPlus,
+    QuantityValue
+} from '@/styles/ProductStyle';
+import { addItemToCart } from '@/lib/features/cart/cartSlice';
 
 const SelectProductForCard = ({ product }) => {
     const t = useTranslations();
@@ -21,7 +32,7 @@ const SelectProductForCard = ({ product }) => {
             size: selectedSize,
             quantity: quantity,
         };
-        // dispatch(addItemToCart(cartItem)); 
+        dispatch(addItemToCart(cartItem)); 
         console.log(cartItem);
     };
 
@@ -50,7 +61,7 @@ const SelectProductForCard = ({ product }) => {
                     <div className="d-flex gap-2 flex-wrap">
 
                         {parsedColors(product).map((color) => (
-                            <label key={color} className={styles.colorOption}>
+                            <label key={color} >
                                 <ProductDetailColorInput
                                     type="radio"
                                     name="color"
@@ -72,7 +83,7 @@ const SelectProductForCard = ({ product }) => {
 
 
                         {parsedSizes(product).map((size) => (
-                            <ProductDetailSizes key={size} size={size} selectedSize={selectedSize}>
+                            <ProductDetailSizes key={size} size={size} selectedsize={selectedSize}>
                                 <ProductDetailSizeInput
                                     type="radio"
                                     name="size"
@@ -89,21 +100,14 @@ const SelectProductForCard = ({ product }) => {
                 <div className="d-flex gap-3 mt-3 border-top py-3">
                     <div className="d-flex">
                         <QuantitiyMinus type="button" onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}>-</QuantitiyMinus>
-                        {/* <QuantityInput
-                            id="quantity"
-                            type="text"
-                            min="1"
-                            disabled
-                            value={quantity}
-                            onChange={(e) => setQuantity(e.target.value)}
-                        /> */}
+
                         <QuantityValue>
                             {quantity}
                         </QuantityValue>
                         <QuantityPlus type="button" onClick={() => setQuantity(quantity + 1)}>+</QuantityPlus>
                     </div>
 
-                    <AddToCartButton type="submit" className={styles.addToCartButton}>Add to Cart</AddToCartButton>
+                    <AddToCartButton type="submit">Add to Cart</AddToCartButton>
                 </div>
             </form>
         </div>

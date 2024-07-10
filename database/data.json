@@ -100,6 +100,48 @@
                     "username": "Michael Brown",
                     "comment": "Very comfortable and stylish sneakers!",
                     "date": "2024-07-03"
+                },
+                {
+                    "rating": 3,
+                    "username": "Michael3 Brown",
+                    "comment": "Very comfortable and stylish sneakers!",
+                    "date": "2024-07-03"
+                }, 
+                {
+                    "rating": 5,
+                    "username": "Michael Brown",
+                    "comment": "Very comfortable and stylish sneakers!",
+                    "date": "2024-07-03"
+                },
+                {
+                    "rating": 3,
+                    "username": "Michael3 Brown",
+                    "comment": "Very comfortable and stylish sneakers!",
+                    "date": "2024-07-03"
+                },
+                {
+                    "rating": 5,
+                    "username": "Michael Brown",
+                    "comment": "Very comfortable and stylish sneakers!",
+                    "date": "2024-07-03"
+                },
+                {
+                    "rating": 3,
+                    "username": "Michael3 Brown",
+                    "comment": "Very comfortable and stylish sneakers!",
+                    "date": "2024-07-03"
+                }, 
+                {
+                    "rating": 5,
+                    "username": "Michael Brown",
+                    "comment": "Very comfortable and stylish sneakers!",
+                    "date": "2024-07-03"
+                },
+                {
+                    "rating": 3,
+                    "username": "Michael3 Brown",
+                    "comment": "Very comfortable and stylish sneakers!",
+                    "date": "2024-07-03"
                 }
             ],
             "type": "tshirt ",

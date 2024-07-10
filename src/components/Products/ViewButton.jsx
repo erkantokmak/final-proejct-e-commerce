@@ -12,6 +12,8 @@ const ViewButton = ({ data }) => {
 
             {click ? (data.slice(4).map((product) => (
                 (
+                    <div className="col-6 col-md-3 py-3">
+
                     <SingleProduct
                         key={product.id}
                         image={product.image}
@@ -19,6 +21,7 @@ const ViewButton = ({ data }) => {
                         rating={product.rating}
                         price={product.price}
                         discountPercentage={product.discountPercentage} />
+                    </div>
                 )))) : ''}
             <div className="col-12 d-flex justify-content-center">
                 {click ? (<ViewAllButton className='mt-5' onClick={() => { setClick(false) }}>

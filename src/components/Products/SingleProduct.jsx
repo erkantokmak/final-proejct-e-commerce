@@ -8,7 +8,7 @@ const SingleProduct = ({ image, title, rating, price, discountPercentage }) => {
     
     return (
         <>
-            <div className="col-6 col-md-3 py-3">
+            
                 <ProductBackground>
                     <ProductImageWrapper className='position-relative'>
                         <Image src={`/assets/products/${image}`} alt="product" fill className='object-fit-contain' />
@@ -34,7 +34,6 @@ const SingleProduct = ({ image, title, rating, price, discountPercentage }) => {
                     </>)
                     : ''}
                 </div>
-            </div>
         </>
     )
 }

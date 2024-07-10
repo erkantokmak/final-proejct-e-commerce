@@ -20,6 +20,8 @@ const NewSelling = async () => {
             <div className="row">
             {topselling.slice(0,4).map((product) => (
                     (
+                        <div className="col-6 col-md-3 py-3">
+
                         <SingleProduct 
                         key={product.id} 
                         image={product.image} 
@@ -27,6 +29,7 @@ const NewSelling = async () => {
                         rating={product.rating} 
                         price={product.price} 
                         discountPercentage={product.discountPercentage} />
+                        </div>
                     )))}
             </div>
             <div className="row">

@@ -25,10 +25,10 @@
           "username": "John Doe",
           "comment": "Great product! Fits perfectly!",
           "date": "2024-07-02"
-        }        
+        }
       ],
       "type": "tshirt",
-      "category": "T-Shirts",
+      "category": "tshirts",
       "dressStyle": "formal"
     },
     {
@@ -86,6 +86,13 @@
           "username": "Emily Clark",
           "comment": "Absolutely love this dress! Looks amazing.",
           "date": "2024-07-04"
+        },
+        {
+          "id": "1720612394339",
+          "rating": 5,
+          "username": "Erkan TOKMAK",
+          "comment": "Syndore Sağolsun",
+          "date": "2024-07-10T11:53:14.339Z"
         }
       ],
       "type": "shirt",
@@ -442,31 +449,31 @@
   ],
   "customerComments": [
     {
-      "id": 1,
+      "id": "1",
       "username": "John Doe",
       "comment": "Great product! Fits perfectly!",
       "rating": 5
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "Jane Smith",
       "comment": "Good quality jeans, but runs a bit small.",
       "rating": 5
     },
     {
-      "id": 3,
+      "id": "3",
       "username": "Emily Clark",
       "comment": "Absolutely love this dress! Looks amazing.",
       "rating": 5
     },
     {
-      "id": 4,
+      "id": "4",
       "username": "Michael Brown",
       "comment": "Very comfortable and stylish sneakers!",
       "rating": 5
     },
     {
-      "id": 5,
+      "id": "5",
       "username": "Anna White",
       "comment": "Nice jacket, but a bit expensive.",
       "rating": 5

@@ -4,14 +4,16 @@ import IconBox from "./IconBox";
 import Searchbar from './Searchbar'
 import { useTranslations } from "next-intl";
 import { HeaderContainer } from "@/styles/ComponentStyle";
+import { Container } from "@/styles/LayoutStyle";
 
 
 const Navbar = () => {
     const t = useTranslations();
     return (
-<HeaderContainer className="sticky-top">
-        <nav className="navbar navbar-expand-md border-bottom navbarBackground py-4">
-                <div className="d-flex container gap-1">
+        <HeaderContainer className="sticky-top">
+            <nav className="navbar navbar-expand-md border-bottom navbarBackground py-4">
+                <div className="d-flex container-md gap-1">
+
                     <div className="d-flex gap-3 flex-wrap">
                         <button
                             className="navbar-toggler border-0"
@@ -61,10 +63,11 @@ const Navbar = () => {
                         <Searchbar />
                     </div>
                     <IconBox />
+
                 </div>
-               
-        </nav>
-</HeaderContainer>
+
+            </nav>
+        </HeaderContainer>
     );
 };
 

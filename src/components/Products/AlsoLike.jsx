@@ -18,6 +18,8 @@ const AlsoLike = async () => {
             <div className="row mb-5">
                 {alsolike.slice(0, 4).map((product) => (
                     (
+                        <div className="col-6 col-md-3 py-3">
+
                         <SingleProduct
                             key={product.id}
                             image={product.image}
@@ -25,6 +27,7 @@ const AlsoLike = async () => {
                             rating={product.rating}
                             price={product.price}
                             discountPercentage={product.discountPercentage} />
+                        </div>
                     )))}
             </div>
         </>

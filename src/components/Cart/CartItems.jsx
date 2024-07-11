@@ -3,49 +3,48 @@ import { DiscountBox, OldPrice, ProductBackground, ProductPrice, ProductTitle, Q
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
+import CartQuantity from './CartQuantity'
 
-const CartItems = () => {
+const CartItems = ({ item }) => {
   const t = useTranslations();
   return (
     <>
       <div className="row">
-        <ProductBackground>
-          <ProductCartImageWrapper>
-            <Image src="/assets/product/black-stripped-tshirt.png" alt='test' fill className='object-fit-contain' />
-          </ProductCartImageWrapper>
-        </ProductBackground>
-        <div className='d-flex flex-column'>
-          <ProductTitle>
-            Title
-          </ProductTitle>
-          <ProductCartVariableTitle>
-            Size:
-            <ProductCartVariable>
-              Large
-            </ProductCartVariable>
-          </ProductCartVariableTitle>
-        </div>
-        {/* <div className="d-flex align-items-center gap-2 mt-2">
-          <ProductPrice className='m-0'>
-            $ {price}
-          </ProductPrice>
-          {discountPercentage > 0 ? (<>
-            <OldPrice className='m-0'>
-              ${Math.floor(price / (1 - discountPercentage / 100))}
-            </OldPrice>
-            <DiscountBox>
-              -{discountPercentage}%
-            </DiscountBox>
-          </>)
-            : ''}
-        </div> */}
-        <div className="d-flex">
-          <QuantitiyMinus type="button" onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}>-</QuantitiyMinus>
+        <div className="d-flex justify-content-between">
+          <div className="d-flex gap-3">
+            <ProductBackground>
+              <ProductCartImageWrapper>
+                <Image src={`/assets/products/${item.image}`} alt='test' fill className='object-fit-contain' />
+              </ProductCartImageWrapper>
+            </ProductBackground>
+            <div className='d-flex flex-column'>
+              <ProductTitle>
+                {item.title}
+              </ProductTitle>
+              <ProductCartVariableTitle>
+                Size:
+                <ProductCartVariable>
+                  {item.size}
+                </ProductCartVariable>
+              </ProductCartVariableTitle>
 
-          <QuantityValue>
-            {/* {quantity} */}1
-          </QuantityValue>
-          <QuantityPlus type="button" onClick={() => setQuantity(quantity + 1)}>+</QuantityPlus>
+              <div className="d-flex align-items-center gap-2 mt-2">
+                <ProductPrice className='m-0'>
+                  $ {item.price}
+                </ProductPrice>
+                {item.discountPercentage > 0 ? (<>
+                  <OldPrice className='m-0'>
+                    ${Math.floor(item.price / (1 - item.discountPercentage / 100))}
+                  </OldPrice>
+                  <DiscountBox>
+                    -{item.discountPercentage}%
+                  </DiscountBox>
+                </>)
+                  : ''}
+              </div>
+            </div>
+          </div>
+          <CartQuantity item={item} />
         </div>
       </div>
     </>

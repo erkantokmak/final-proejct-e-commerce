@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const CartContainer = styled.div`
 border-radius: 20px;
+padding: 20px 24px;
 border: 1px solid rgba(0, 0, 0, 0.10);
 `;
 
@@ -32,4 +33,9 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+`;
+
+export const TrashButton = styled.button`
+border:none;
+background-color: transparent;
 `;

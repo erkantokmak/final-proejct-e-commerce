@@ -30,7 +30,12 @@ const SelectProductForCard = ({ product }) => {
     const handleAddToCart = (e) => {
         e.preventDefault();
         const cartItem = {
-            product: product,
+            id: crypto.randomUUID(),
+            pid: product.id,
+            image: product.image,
+            title: product.title,
+            price: product.price,
+            discountPercentage: product.discountPercentage,
             color: selectedColor,
             size: selectedSize,
             quantity: quantity,

@@ -492,20 +492,6 @@
   ],
   "users": [
     {
-      "id": "1",
-      "username": "Erkan TOKMAK",
-      "email": "erkantokmak@mail.com",
-      "baskets": [
-        {
-          "id": "1",
-          "productId": "1",
-          "quantity": "1",
-          "size": "Medium",
-          "color": "darkolivegreen"
-        }
-      ]
-    },
-    {
       "id": "uGDxMBJkG8McY3HTQQ4zWAg0act2",
       "email": "erkan@mail.com",
       "username": "Erkan TOKMAK",
@@ -516,6 +502,35 @@
       "email": "erkantokmak0@gmail.com",
       "username": "Erkan TOKMAK",
       "baskets": []
+    },
+    {
+      "id": "NxpS0f3BaIaHxUdUMQwDWzNJLsg1",
+      "email": "acc@mail.com",
+      "username": "Test Acc",
+      "baskets": [
+        {
+          "id": "7696e40b-7903-4c3d-ad85-a6e52e43b389",
+          "pid": "6",
+          "image": "courage-graphic-tshirt.png",
+          "title": "Courage Graphic T-shirt",
+          "price": 145,
+          "discountPercentage": 0,
+          "color": "black",
+          "size": "Small",
+          "quantity": 4
+        },
+        {
+          "id": "c96f1135-6ad4-4467-8e6c-4fbcf82ef458",
+          "pid": "6",
+          "image": "courage-graphic-tshirt.png",
+          "title": "Courage Graphic T-shirt",
+          "price": 145,
+          "discountPercentage": 0,
+          "color": "yellow",
+          "size": "Medium",
+          "quantity": 1
+        }
+      ]
     }
   ]
 }

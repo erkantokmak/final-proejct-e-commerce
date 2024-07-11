@@ -17,6 +17,7 @@ import { GlobalVariables } from "@/styles/global";
 import Navbar from "@/components/Header/Navbar";
 import '@smastrom/react-rating/style.css'
 import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const metadata = {
     title: "SHOP.CO",

@@ -4,10 +4,11 @@ import { auth } from '@/firebase/firebase';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { toast } from "react-toastify";
 import { useTranslations } from 'next-intl';
-import { redirect } from "next/navigation";
 import { useDispatch } from "react-redux";
 import { userLogin, userLogout } from '@/lib/features/auth/authSlice';
 import useAuth from "@/lib/Hooks/useAuth";
+import { addCartFromDB, clearCart } from "@/lib/features/cart/cartSlice";
+import { getBasket } from "@/api/server";
 
 function page() {
   const t = useTranslations();
@@ -23,8 +24,9 @@ function page() {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const user = userCredential.user;
       dispatch(userLogin(user));
+      const data = await getBasket(user.uid);
+      dispatch(addCartFromDB(data.baskets))
       toast.success("Login successful!");
-      redirect("/")
     } catch (err) {
       toast.error(err.message);
     }
@@ -32,6 +34,7 @@ function page() {
   const handleLogOut = async () => {
     try {
       dispatch(userLogout());
+      dispatch(clearCart());
       toast.success("Logout successful!");
     } catch (err) {
       toast.error(err.message);

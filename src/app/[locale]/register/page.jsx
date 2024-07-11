@@ -9,6 +9,7 @@ import { useDispatch } from "react-redux";
 import { userLogin, userLogout } from "@/lib/features/auth/authSlice";
 import { postUserToDB } from "@/api/server";
 import useAuth from "@/lib/Hooks/useAuth";
+import { clearCart } from "@/lib/features/cart/cartSlice";
 
 function page() {
   const t = useTranslations();
@@ -49,6 +50,7 @@ function page() {
   const handleLogOut = async () => {
     try {
       dispatch(userLogout());
+      dispatch(clearCart());
       toast.success("Logout successful!");
     } catch (err) {
       toast.error(err.message);

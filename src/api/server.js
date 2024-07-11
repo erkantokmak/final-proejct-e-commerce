@@ -97,12 +97,11 @@ export const updateUserToDB = async (id, baskets) => {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify(baskets),
+        body: JSON.stringify({ baskets }),
     });
 
     return res.json();
-
-}
+};
 
 export const addToBasket = async (product) => {
     const res = await fetch(`${URL}/users/baskets`, {
@@ -116,3 +115,9 @@ export const addToBasket = async (product) => {
     return res.json();
 }
 
+
+export const getBasket = async (id) => {
+    const res = await fetch(`${URL}/users/${id}`, { cache: "no-store" });
+    const data = await res.json();
+    return data;
+}

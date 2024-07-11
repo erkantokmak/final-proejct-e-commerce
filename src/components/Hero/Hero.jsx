@@ -3,12 +3,13 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { HeroButton, HeroSub, HeroSubText, HeroText, HeroTitle, StyledLandingMobile } from "@/styles/HeroStyle";
 import { Link } from "@/navigation";
+import { Container } from "@/styles/LayoutStyle";
 
 const Hero = () => {
     const t = useTranslations();
     return (
-        <main className="landingPage">
-            <div className="container-xl">
+        <section className="landingPage">
+            <Container>
                 <div className="col-lg-6 ">
                     <HeroTitle>
                         {t("bannerTitle")}
@@ -17,9 +18,16 @@ const Hero = () => {
                         {t("bannerText")}
                     </HeroText>
                     <Link href="/shop">
-                    <HeroButton>
-                        {t("bannerButton")}
-                    </HeroButton>
+                        <div className="d-none d-md-block">
+                            <HeroButton>
+                                {t("bannerButton")}
+                            </HeroButton>
+                        </div>
+                        <div className="d-block d-md-none">
+                            <HeroButton className="w-100">
+                                {t("bannerButton")}
+                            </HeroButton>
+                        </div>
                     </Link>
                     <div className="pt-4 row">
                         <div className="col-md-4 col-6 text-md-start text-center">
@@ -56,8 +64,8 @@ const Hero = () => {
                         className="rounded-4 object-fit-contain"
                     />
                 </StyledLandingMobile>
-            </div>
-        </main>
+            </Container>
+        </section>
     );
 };
 

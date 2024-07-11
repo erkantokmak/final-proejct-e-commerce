@@ -22,6 +22,7 @@ const AlsoLike = async () => {
 
                         <SingleProduct
                             key={product.id}
+                            id={product.id}
                             image={product.image}
                             title={product.title}
                             rating={product.rating}

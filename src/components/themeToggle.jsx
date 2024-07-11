@@ -9,13 +9,12 @@ import { IconContainer, ToggleButton } from '@/styles/ComponentStyle';
 const ThemeToggle = () => {
   const dispatch = useDispatch();
   const darkMode = useSelector((state) => state.theme.darkMode);
-  console.log(darkMode);
   const handleToggle = () => {
     dispatch(toggleDarkMode());
   };
 
   return (
-    <ToggleButton onClick={handleToggle} darkmode={{ darkMode }}>
+    <ToggleButton onClick={handleToggle} darkMode={{ darkMode }}>
       <IconContainer>
         {darkMode ? <FaSun size={24} /> : <FaMoon size={24} />}
       </IconContainer>

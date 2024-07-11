@@ -517,20 +517,42 @@
           "discountPercentage": 0,
           "color": "black",
           "size": "Small",
-          "quantity": 4
+          "quantity": 1
         },
         {
-          "id": "c96f1135-6ad4-4467-8e6c-4fbcf82ef458",
-          "pid": "6",
-          "image": "courage-graphic-tshirt.png",
-          "title": "Courage Graphic T-shirt",
-          "price": 145,
-          "discountPercentage": 0,
-          "color": "yellow",
+          "id": "fe133346-c930-4942-9958-053dd1646a1d",
+          "pid": "4",
+          "image": "sleeve-striped-tshirt.png",
+          "title": "Sleeve Striped T-shirt",
+          "price": 160,
+          "discountPercentage": 30,
+          "color": "red",
           "size": "Medium",
           "quantity": 1
         }
       ]
+    }
+  ],
+  "promoCodes": [
+    {
+      "code": "gelecegiyazanlar20",
+      "discount": "20"
+    },
+    {
+      "code": "gelecegiyazanlar40",
+      "discount": "40"
+    },
+    {
+      "code": "gelecegiyazanlar60",
+      "discount": "60"
+    },
+    {
+      "code": "gelecegiyazanlar80",
+      "discount": "80"
+    },
+    {
+      "code": "gelecegiyazanlar100",
+      "discount": "100"
     }
   ]
 }

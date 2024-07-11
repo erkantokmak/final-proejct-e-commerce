@@ -9,7 +9,7 @@ const ProductTabs = ({data}) => {
         <div className='mt-5'>
             <ul className="nav nav-tabs" id="myTab" role="tablist">
                 <li className="nav-item" role="presentation">
-                    <button className={`nav-link ${'active' && 'myactive'}`}
+                    <button className="nav-link"
                         id="productDetails-tab" data-bs-toggle="tab"
                         data-bs-target="#productDetails" type="button"
                         role="tab" aria-controls="productDetails" aria-selected="false"
@@ -18,7 +18,7 @@ const ProductTabs = ({data}) => {
                     </button>
                 </li>
                 <li className="nav-item" role="presentation">
-                    <button className="nav-link avtive" id="ratingReviews-tab" 
+                    <button className="nav-link active" id="ratingReviews-tab" 
                     data-bs-toggle="tab" data-bs-target="#ratingReviews" 
                     type="button" role="tab" aria-controls="ratingReviews" 
                     aria-selected="true"

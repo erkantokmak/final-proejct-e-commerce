@@ -30,11 +30,11 @@ const CartItems = ({ item }) => {
 
               <div className="d-flex align-items-center gap-2 mt-2">
                 <ProductPrice className='m-0'>
-                  $ {item.price}
+                  ${Math.floor(item.price - (item.discountPercentage * item.price / 100))}
                 </ProductPrice>
                 {item.discountPercentage > 0 ? (<>
                   <OldPrice className='m-0'>
-                    ${Math.floor(item.price / (1 - item.discountPercentage / 100))}
+                    $ {item.price}
                   </OldPrice>
                   <DiscountBox>
                     -{item.discountPercentage}%

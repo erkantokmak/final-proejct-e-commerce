@@ -110,3 +110,12 @@ gap: 12px;
 border-radius: 62px;
 background: #FFF;
 `;
+
+export const FooterCopy = styled.span`
+color: rgba(0, 0, 0, 0.60);
+font-family: 'Satoshi', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+`;

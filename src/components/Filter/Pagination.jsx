@@ -24,7 +24,7 @@ const Pagination = ({ hasNextPage, hasPrevPage }) => {
       aria-label="Page navigation example"
       className="d-flex justify-content-center"
     >
-      <ul className="pagination mt-5">
+      <ul className="pagination mt-5 d-flex justify-content-between">
         <li className="page-item">
           <button
             className={`page-link ${!hasPrevPage ? "disabled" : ""}`}

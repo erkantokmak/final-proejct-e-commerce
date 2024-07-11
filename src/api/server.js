@@ -79,6 +79,12 @@ export const getProducts = async (query) => {
     return data;
 }
 
+export const getAllProducts = async () => {
+    const res = await fetch(`${URL}/products`, { cache: "no-store" });
+    const data = await res.json();
+    return data;
+}
+
 export const postUserToDB = async (user) => {
     const res = await fetch(`${URL}/users`, {
         method: "POST",
@@ -118,6 +124,12 @@ export const addToBasket = async (product) => {
 
 export const getBasket = async (id) => {
     const res = await fetch(`${URL}/users/${id}`, { cache: "no-store" });
+    const data = await res.json();
+    return data;
+}
+
+export const getPromoCodes = async () => {
+    const res = await fetch(`${URL}/promoCodes`, { cache: "no-store" });
     const data = await res.json();
     return data;
 }

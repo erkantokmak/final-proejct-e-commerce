@@ -9,7 +9,7 @@ const Searchbar = () => {
     const t = useTranslations();
     return (
         <>
-            <SearchBarContainer>
+            <SearchBarContainer className='w-50 me-5'>
                 <SearchBarIconContainer>
                 <FontAwesomeIcon icon={faSearch} width={20.27} height={20.27}/>
                 </SearchBarIconContainer>

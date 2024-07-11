@@ -4,6 +4,7 @@ import Pagination from '@/components/Filter/Pagination';
 import Sort from '@/components/Filter/Sort';
 import Breadcrumb from '@/components/Products/Breadcrumb';
 import SingleProduct from '@/components/Products/SingleProduct';
+import { FilterCategoryTitle } from '@/styles/FilterStyle';
 import { Container } from '@/styles/LayoutStyle'
 import { getTranslations } from 'next-intl/server';
 import React from 'react'
@@ -28,7 +29,9 @@ const page = async ({ searchParams }) => {
           <div className="col-12 col-md-9">
             <div className="row">
               <div className="d-flex justify-content-between align-items-center">
-                {t('categoryTitle')}
+                <FilterCategoryTitle>
+                  {t('categoryTitle')}
+                </FilterCategoryTitle>
                 <Sort productLength={data.length} />
               </div>
               {
@@ -37,6 +40,7 @@ const page = async ({ searchParams }) => {
                     <div className="col-md-4 py-3">
                       <SingleProduct
                         key={product.id}
+                        id={product.id}
                         image={product.image}
                         title={product.title}
                         rating={product.rating}

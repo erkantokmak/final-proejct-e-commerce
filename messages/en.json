@@ -13,6 +13,7 @@
     "newArrivals": "New Arrivals",
     "brands": "Brands",
     "searchbar": "Search for products...",
+    "searchmodal": "Search For Products",
     "bannerTitle": "FIND CLOTHES THAT MATCHES YOUR STYLE",
     "bannerText": "Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.",
     "bannerButton": "Shop Now",
@@ -70,7 +71,7 @@
     "loadLessReviews": "Load Less Reviews",
     "allReviews": "All Reviews",
     "youMightAlsoLike": "YOU MIGHT ALSO LIKE",
-    "sortby": "Sort by",
+    "sortby": "Sort by 1- 10 of all products",
     "sortMostPopular": "Most Popular",
     "sortPriceLowToHigh": "Price: Low to High",
     "sortPriceHighToLow": "Price: High to Low",
@@ -102,11 +103,15 @@
     "discount": "Discount",
     "deliveryFee": "Delivery Fee",
     "total": "Total",
+    "promoCode": "Add Promo Code",
     "applyButton": "Apply", 
     "checkoutButton": "Go to  Checkout",
     "emptyCart": "Your cart is empty",
     "continueShopping": "Continue Shopping",
     "remove": "Remove",
     "quantity": "Quantity",
-    "loginPls": "Please Login for Write A Review"
+    "loginPls": "Please Login for Write A Review",
+    "newslettersuccess": "Thank you for subscribing to our newsletter!",
+    "categoryTitle": "Casual"
+    
 }

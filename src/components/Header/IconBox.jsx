@@ -1,25 +1,35 @@
-import Link from "next/link";
+"use client"
 import React from "react";
 import { FiShoppingCart } from "react-icons/fi";
-import { IoMdSearch } from "react-icons/io";
+import { IoMdLogIn, IoMdSearch } from "react-icons/io";
 import { VscAccount } from "react-icons/vsc";
-import {  IconsWrapper } from '../../styles/ComponentStyle'
+import { IconsWrapper, StyledLink } from '../../styles/ComponentStyle'
 import ThemeToggle from '../themeToggle'
+import useAuth from "@/lib/Hooks/useAuth";
+import { useLocale } from "next-intl";
+import { BiWorld } from "react-icons/bi";
 
 const IconBox = () => {
+    const { currentUser } = useAuth();
+
     return (
         <>
-
             <IconsWrapper className="d-flex align-items-center">
-                <Link href="#" className="me-3">
+                <StyledLink href="#" className="me-3">
                     <IoMdSearch size={24} />
-                </Link>
-                <Link href="#" className="me-3">
+                </StyledLink>
+                <StyledLink href="/cart" className="me-3">
                     <FiShoppingCart size={24} />
-                </Link>
-                <Link href="#">
-                    <VscAccount size={24} />
-                </Link>
+                </StyledLink>
+                {
+                    currentUser ?
+                        <StyledLink href="/login" className="me-3"><VscAccount size={24} /></StyledLink>
+                        :
+                        <StyledLink href="/register" className="me-3"><IoMdLogIn size={24} /></StyledLink>
+                }
+                <StyledLink href="/" className="me-3">
+                    <BiWorld size={24} />
+                </StyledLink>
                 <ThemeToggle />
             </IconsWrapper>
 

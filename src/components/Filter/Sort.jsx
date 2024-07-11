@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "@/navigation";
 import { useSearchParams } from "next/navigation";
 
-const Sort = ({productLength}) => {
+const Sort = () => {
     const t = useTranslations();
     const [sortOption, setSortOption] = useState("mostPopular");
     const router = useRouter();
@@ -42,18 +42,20 @@ const Sort = ({productLength}) => {
 
     return (
         <>
-            Sorted By 1-10 of {productLength}
-            <select
-                value={sortOption}
-                onChange={handleSortChange}
-                className="form-select d-inline-block w-auto bg-transparent border-0"
-            >
-                <option value="mostPopular">{t("sortMostPopular")}</option>
-                <option value="priceLowToHigh">{t("sortPriceLowToHigh")}</option>
-                <option value="priceHighToLow">{t("sortPriceHighToLow")}</option>
-                <option value="az">{t("sortAz")}</option>
-                <option value="za">{t("sortZa")}</option>
-            </select>
+            <div className="d-flex justify-content-end align-items-center">
+                {t('sortby')}
+                <select
+                    value={sortOption}
+                    onChange={handleSortChange}
+                    className="form-select d-inline-block w-auto bg-transparent border-0"
+                >
+                    <option value="mostPopular">{t("sortMostPopular")}</option>
+                    <option value="priceLowToHigh">{t("sortPriceLowToHigh")}</option>
+                    <option value="priceHighToLow">{t("sortPriceHighToLow")}</option>
+                    <option value="az">{t("sortAz")}</option>
+                    <option value="za">{t("sortZa")}</option>
+                </select>
+            </div>
         </>
     );
 };

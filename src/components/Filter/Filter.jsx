@@ -97,7 +97,7 @@ const Filter = () => {
     handleSelectFilterOptions("category_like", category.toLowerCase());
   const setPrice = (price) => setPriceRange(price);
   const setColor = (colorName) =>
-    handleSelectFilterOptions("color_like", colorName.toLowerCase());
+    handleSelectFilterOptions("colors_like", colorName.toLowerCase());
   const setSize = (size) =>
     handleSelectFilterOptions("sizes_like", size.toLowerCase());
   const setDressStyle = (dressStyle) =>
@@ -170,7 +170,7 @@ const Filter = () => {
               name="color"
               value={colorName.toLowerCase()}
               color={color}
-              selected={selectedFilterQueries?.color_like?.includes(
+              selected={selectedFilterQueries?.colors_like?.includes(
                 colorName.toLocaleLowerCase()
               )}
               onClick={() => setColor(colorName)}

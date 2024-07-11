@@ -1,5 +1,5 @@
 import { BrowseDressImageWrapper, BrowseDressSection, BrowseDressTitle, BrowseDressWrapper, ImageBox } from '@/styles/BrowseDressStyle'
-import { SectionTitle } from '@/styles/ComponentStyle'
+import { SectionTitle, StyledLink } from '@/styles/ComponentStyle'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
@@ -15,55 +15,59 @@ const BrowseDressStyle = () => {
                             {t('browseByDressStyle')}
                         </SectionTitle>
                     </div>
-                    
+
                 </div>
                 <BrowseDressWrapper>
                     <div className="row">
                         <div className="col-12 col-md-4 mb-3">
-                            <ImageBox>
-                                <BrowseDressImageWrapper>
-                                    <Image src="/assets/banners/casual.png" alt="casual-dressstyle" fill className='object-fit-cover rounded-5' />
-                                    <BrowseDressTitle className='position-absolute mt-3 ms-3'>
-                                        {t('casual')}
-                                    </BrowseDressTitle>
-                                </BrowseDressImageWrapper>
-
-                            </ImageBox>
+                            <StyledLink href="/shop?category=casual">
+                                <ImageBox>
+                                    <BrowseDressImageWrapper>
+                                        <Image src="/assets/banners/casual.png" alt="casual-dressstyle" fill className='object-fit-cover rounded-5' />
+                                        <BrowseDressTitle className='position-absolute mt-3 ms-3'>
+                                            {t('casual')}
+                                        </BrowseDressTitle>
+                                    </BrowseDressImageWrapper>
+                                </ImageBox>
+                            </StyledLink>
                         </div>
                         <div className="col-12 col-md-8 mb-3">
-                            <ImageBox>
-                                <BrowseDressImageWrapper>
-                                    <Image src="/assets/banners/formal.png" alt="formal-dressstyle" fill className='object-fit-cover rounded-5' />
-                                    <BrowseDressTitle className='position-absolute mt-3 ms-3'>
-                                        {t('formal')}
-                                    </BrowseDressTitle>
-                                </BrowseDressImageWrapper>
-
-                            </ImageBox>
+                            <StyledLink href="/shop?category=formal">
+                                <ImageBox>
+                                    <BrowseDressImageWrapper>
+                                        <Image src="/assets/banners/formal.png" alt="formal-dressstyle" fill className='object-fit-cover rounded-5' />
+                                        <BrowseDressTitle className='position-absolute mt-3 ms-3'>
+                                            {t('formal')}
+                                        </BrowseDressTitle>
+                                    </BrowseDressImageWrapper>
+                                </ImageBox>
+                            </StyledLink>
                         </div>
                     </div>
                     <div className="row mb-5">
                         <div className="col-12 col-md-8 mb-3">
-                            <ImageBox>
-                                <BrowseDressImageWrapper>
-                                    <Image src="/assets/banners/party.png" alt="party-dressstyle" fill className='object-fit-cover rounded-5' />
-                                    <BrowseDressTitle className='position-absolute mt-3 ms-3'>
-                                        {t('party')}
-                                    </BrowseDressTitle>
-                                </BrowseDressImageWrapper>
-
-                            </ImageBox>
+                            <StyledLink href="/shop?category=party">
+                                <ImageBox>
+                                    <BrowseDressImageWrapper>
+                                        <Image src="/assets/banners/party.png" alt="party-dressstyle" fill className='object-fit-cover rounded-5' />
+                                        <BrowseDressTitle className='position-absolute mt-3 ms-3'>
+                                            {t('party')}
+                                        </BrowseDressTitle>
+                                    </BrowseDressImageWrapper>
+                                </ImageBox>
+                            </StyledLink>
                         </div>
                         <div className="col-12 col-md-4 mb-3">
-                            <ImageBox>
-                                <BrowseDressImageWrapper>
-                                    <Image src="/assets/banners/gym.png" alt="gym-dressstyle" fill className='object-fit-cover rounded-5' />
-                                    <BrowseDressTitle className='position-absolute mt-3 ms-3'>
-                                        {t('gym')}
-                                    </BrowseDressTitle>
-                                </BrowseDressImageWrapper>
-
-                            </ImageBox>
+                            <StyledLink href="/shop?category=gym">
+                                <ImageBox>
+                                    <BrowseDressImageWrapper>
+                                        <Image src="/assets/banners/gym.png" alt="gym-dressstyle" fill className='object-fit-cover rounded-5' />
+                                        <BrowseDressTitle className='position-absolute mt-3 ms-3'>
+                                            {t('gym')}
+                                        </BrowseDressTitle>
+                                    </BrowseDressImageWrapper>
+                                </ImageBox>
+                            </StyledLink>
                         </div>
 
                     </div>

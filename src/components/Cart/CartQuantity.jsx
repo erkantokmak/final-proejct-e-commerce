@@ -1,4 +1,4 @@
-import { deleteItemFromCart } from '@/lib/features/cart/cartSlice';
+import { deleteItemFromCart, updateQuantity } from '@/lib/features/cart/cartSlice';
 import { TrashButton } from '@/styles/CartStyle';
 import { QuantitiyMinus, QuantityPlus, QuantityValue } from '@/styles/ProductStyle'
 import React, { useEffect, useState } from 'react'
@@ -8,20 +8,31 @@ import { toast } from 'react-toastify';
 
 const CartQuantity = ({item}) => {
 
-    const [quantity, setQuantity] = useState(1);
+    const [quantity, setQuantity] = useState(item.quantity);
     const basket = useSelector(state => state.cart.cartItem);
     const dispatch = useDispatch();
-    useEffect(()=> {
-        if(basket.length > 0){
-            setQuantity(item.quantity);
+    useEffect(() => {
+        if (basket.length > 0) {
+            const cartItem = basket.find(basketItem => 
+                basketItem.pid === item.pid &&
+                basketItem.color === item.color &&
+                basketItem.size === item.size
+            );
+            if (cartItem) {
+                setQuantity(cartItem.quantity);
+            }
         }
-    })
-
+    }, [basket, item]);
   
-    const handleDelete = () => {
-        dispatch(deleteItemFromCart(item.id))
+    const handleDelete = async () => {
+        dispatch(deleteItemFromCart({pid: item.pid, size: item.size, color: item.color}))
         toast.success('Item Deleted From Your Basket Successfully!')
     }
+
+    const handleQuantity = async (newQuantity) => {
+        setQuantity(newQuantity);
+        dispatch(updateQuantity({ pid: item.pid, size: item.size, color: item.color, quantity: newQuantity }));
+    };
 
     return (
         <>
@@ -32,11 +43,11 @@ const CartQuantity = ({item}) => {
                 </svg>
             </TrashButton> 
             <div className="d-flex align-items-center">
-                <QuantitiyMinus type="button" onClick={() => setQuantity(quantity > 1 ? quantity - 1 : 1)}>-</QuantitiyMinus>
+                <QuantitiyMinus type="button" onClick={() => handleQuantity(quantity > 1 ? quantity - 1 : 1)}>-</QuantitiyMinus>
                 <QuantityValue>
                     {quantity}
                 </QuantityValue>
-                <QuantityPlus type="button" onClick={() => setQuantity(quantity + 1)}>+</QuantityPlus>
+                <QuantityPlus type="button" onClick={() => handleQuantity(quantity + 1)}>+</QuantityPlus>
             </div>
         </div>
         </>

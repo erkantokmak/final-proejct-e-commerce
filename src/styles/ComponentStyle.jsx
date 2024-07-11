@@ -1,4 +1,5 @@
 'use client'
+import { Link } from '@/navigation';
 import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
 
@@ -6,6 +7,33 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyles = createGlobalStyle`
   body {
     background-color: ${(props) => props.theme.background};
+    color: ${(props) => props.theme.color};
+    font-family: 'Satoshi', sans-serif;
+  }
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs{
+    border-color: none;
+    border: ${(props) => props.theme.border};
+    border-type: solid;
+    border-bottom: 1px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    color: ${(props) => props.theme.deactiveBorder};
+  }
+  .nav-link.active{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    border-color: ${(props) => props.theme.border + ' !important'};	
+    border-bottom: 2px;
+    border-style: solid;
+  }
+  .nav-tabs{
+    border:none;
+  }
+  .nav-link{
     color: ${(props) => props.theme.color};
   }
   .landingPage {
@@ -22,6 +50,11 @@ export const GlobalStyles = createGlobalStyle`
 }
 `;
 
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: ${(props) => props.theme.color};
+`;
+
 export const SDiscountFirst = styled.div`
     width: 100%;
     padding: 5px 0;
@@ -31,8 +64,8 @@ export const SDiscountFirst = styled.div`
 `;
 
 export const SDiscountButton = styled.button`
-    background-color: ${(props) => props.theme.background};
-    color: ${(props) => props.theme.color};
+    background: transparent;
+    color: white;
     border: none;
     cursor: pointer;
     font-size: 16px;
@@ -90,14 +123,10 @@ export const ToggleButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
   background-color: ${(props) => props.theme.background};
   color: ${(props) => props.theme.color};
   border: none;
-  border-radius: 25px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 `;
 
 export const IconContainer = styled.div`

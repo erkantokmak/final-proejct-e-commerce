@@ -1,6 +1,7 @@
 "use client"
 import styled from 'styled-components';
 import RangeSlider from "react-range-slider-input";
+import { IoMdCheckmark } from 'react-icons/io';
 
 
 export const FilterContainer = styled.div`
@@ -27,10 +28,21 @@ height: 24px;
 `;
 
 export const FilterButton = styled.button`
-background-color: ${props => props.selected ? '#000' : '#fff'};
+background-color: ${props => props.selected ? '#808080' : '#fff'};
 border: none;
 `;
 
+export const FilterCategoryTitle = styled.h3`
+color: #000;
+font-family: 'Satoshi', sans-serif;
+font-size: 32px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+@media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
+`;
 
 export const StyledRangeSlider = styled(RangeSlider)`
   margin: 60px auto 0;
@@ -43,25 +55,26 @@ export const StyledRangeSlider = styled(RangeSlider)`
   }
 `;
 
-export const ColorOption = styled.button`
+export const ColorOption = styled.div`
 width:37px;
 height: 37px;
     border-radius: 50%;
     display: flex;
     cursor: pointer;
     background-color: ${(props) => (props.color ? props.color : '')};
-    border-color: rgba(0, 0, 0, 0.20);
-    border-width: 1px;
+    border-color: ${(props) => (props.selected ? '#000' : '#F0F0F0')};
+    border-width: ${(props) => (props.selected ? '2px' : '1px')};
     border-style: solid;
-    color: ${(props) => (props.color ? (props.color == 'white' ? 'black' : 'white') : '')};
-    `;
+    content: ${(props) => (props.selected ? '✓' : '')};
+    color: ${(props) => (props.color ? (props.color == '#ffffff' ? '#000000' : '#ffffff') : '')};
+   `;
 
 export const ProductSize = styled.button`
     padding: 10px 20px;
     border-radius: 62px;
     border: none;
-    background-color: ${(props) => (props.size === props.selectedsize ? 'black ;' : '#F0F0F0')};
-    color: ${(props) => (props.size === props.selectedsize ? 'white' : 'rgba(0, 0, 0, 0.6)')};
+    background-color: ${(props) => (props.selected ? '#000' : '#F0F0F0')};
+    color: ${(props) => (props.selected ? '#fff' : 'rgba(0, 0, 0, 0.6)')};
     cursor: pointer;
     `;
 

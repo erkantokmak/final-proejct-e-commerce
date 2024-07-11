@@ -1,10 +1,10 @@
-import { updateUserToDB } from "@/api/server";
-import { createSlice } from "@reduxjs/toolkit";
+import { getPromoCodes, updateUserToDB } from "@/api/server";
+import { createSelector, createSlice } from "@reduxjs/toolkit";
 
 const getUserIdFromLocalStorage = () => {
     if (typeof window !== "undefined") {
         const user = window.localStorage.getItem("user");
-        if(user){
+        if (user) {
             const userid = JSON.parse(user);
             return userid.uid
         } else {
@@ -37,7 +37,8 @@ const updateCartInDB = async (userId, cartItems) => {
 
 const initialState = {
     cartItem: getItemLocalStorage(),
-    userId: getUserIdFromLocalStorage()
+    userId: getUserIdFromLocalStorage(),
+    promoCodes: []
 }
 
 const cartSlice = createSlice({
@@ -45,24 +46,24 @@ const cartSlice = createSlice({
     initialState,
     reducers: {
         addItemToCart: (state, action) => {
-            const existingItem = state.cartItem.find(item => 
+            const existingItem = state.cartItem.find(item =>
                 item.pid === action.payload.pid &&
                 item.color === action.payload.color &&
                 item.size === action.payload.size
-            ); 
+            );
 
             if (existingItem) {
                 existingItem.quantity += action.payload.quantity;
             } else {
                 state.cartItem.push(action.payload);
             }
-           
+
             saveToLocalStorage(state.cartItem);
             updateCartInDB(state.userId, state.cartItem);
         },
         updateQuantity: (state, action) => {
             const { pid, color, size, quantity } = action.payload;
-            const existingItem = state.cartItem.find(item => 
+            const existingItem = state.cartItem.find(item =>
                 item.pid === pid &&
                 item.color === color &&
                 item.size === size
@@ -76,9 +77,10 @@ const cartSlice = createSlice({
             updateCartInDB(state.userId, state.cartItem);
         },
         deleteItemFromCart: (state, action) => {
+            console.log(action.payload)
             const { pid, color, size } = action.payload;
-            state.cartItem = state.cartItem.filter((item) => 
-                (item.pid !== pid && item.color !== color && item.size !== size)
+            state.cartItem = state.cartItem.filter((item) =>
+                !(item.pid === pid && item.color === color && item.size === size)
             );
             saveToLocalStorage(state.cartItem);
             updateCartInDB(state.userId, state.cartItem);
@@ -90,10 +92,12 @@ const cartSlice = createSlice({
         addCartFromDB: (state, action) => {
             state.cartItem = action.payload;
             saveToLocalStorage(state.cartItem);
+        },
+        setPromoCodes: (state, action) => {
+            state.promoCodes = action.payload;
         }
-        
     }
 });
 
-export const { addItemToCart, updateQuantity, deleteItemFromCart, clearCart, addCartFromDB } = cartSlice.actions;
+export const { addItemToCart, updateQuantity, deleteItemFromCart, clearCart, addCartFromDB, setPromoCodes } = cartSlice.actions;
 export default cartSlice.reducer;

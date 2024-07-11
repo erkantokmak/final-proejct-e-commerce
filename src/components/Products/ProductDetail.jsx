@@ -4,9 +4,10 @@ import Image from 'next/image'
 import React from 'react'
 import SelectProductForCard from './SelectProductForCard'
 
+
 const ProductDetail = ({ product }) => {
     return (
-        <>
+        
             <div className="row">
                 <div className="col-12 col-md-6">
                     <div className="row">
@@ -53,11 +54,11 @@ const ProductDetail = ({ product }) => {
                         <div className="col-12">
                             <div className="d-flex align-items-center gap-2 mt-2">
                                 <ProductDetailPrice className='m-0'>
-                                    $ {product.price}
+                                    ${Math.floor(product.price - (product.discountPercentage * product.price / 100))}
                                 </ProductDetailPrice>
                                 {product.discountPercentage > 0 ? (<>
                                     <OldDetailPrice className='m-0'>
-                                        ${Math.floor(product.price / (1 - product.discountPercentage / 100))}
+                                        $ {product.price}
                                     </OldDetailPrice>
                                     <DiscountBox>
                                         -{product.discountPercentage}%
@@ -71,13 +72,13 @@ const ProductDetail = ({ product }) => {
                                 {product.description}
                             </ProductDescription>
                         </div>
-                       <div className="col-12">
-                            <SelectProductForCard product={product}/>
-                       </div>
+                        <div className="col-12">
+                            <SelectProductForCard product={product} />
+                        </div>
                     </div>
                 </div>
             </div>
-        </>
+        
     )
 }
 

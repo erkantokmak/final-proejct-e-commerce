@@ -20,8 +20,6 @@ export default function Home() {
             <TopSelling />
             <BrowseDressStyle />
             <HappyCustomer />
-            <Link href="/login">Login</Link>
-            <Link href="/" locale="tr">Switch to Tr</Link>
             </Container>
         </main>
     )

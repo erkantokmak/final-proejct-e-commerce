@@ -31,7 +31,7 @@ const Navbar = () => {
                             <h1 className="fs-2">{t('logo')}</h1>
                         </Link>
                     </div>
-                    <div className="collapse navbar-collapse gap-3" id="mainNav">
+                    <div className="collapse navbar-collapse gap-5 mx-auto" id="mainNav">
                         <ul className="navbar-nav me-auto">
                             <li className="nav-item">
                                 <Link

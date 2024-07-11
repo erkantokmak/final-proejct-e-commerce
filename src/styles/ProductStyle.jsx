@@ -213,7 +213,7 @@ font-size: 24px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-text-decoration-line: strikethrough;
+text-decoration-line: line-through;
 @media screen and (max-width: 768px) {
     font-size: 20px;
 }
@@ -225,7 +225,7 @@ font-size: 32px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
-text-decoration-line: strikethrough;
+text-decoration-line: line-through;
 @media screen and (max-width: 768px) {
     font-size: 24px;
 }

@@ -39,10 +39,10 @@ const HappyCustomer = () => {
                     {t('ourHappyCustomersTitle')}
                 </SectionTitle>
                 <div className="d-flex gap-3">
-                    <button className="border-0 bg-white" onClick={handlePrev}>
+                    <button className="border-0 bg-white rounded-pill" onClick={handlePrev}>
                         <FaArrowLeft />
                     </button>
-                    <button className="border-0 bg-white" onClick={handleNext}>
+                    <button className="border-0 bg-white rounded-pill" onClick={handleNext}>
                         <FaArrowRight />
                     </button>
                 </div>

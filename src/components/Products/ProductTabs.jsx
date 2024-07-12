@@ -1,7 +1,6 @@
 import { useTranslations } from 'next-intl'
 import React from 'react'
 import Reviews from './Reviews';
-import '../../styles/styles.module.css'
 
 const ProductTabs = ({data}) => {
     const t = useTranslations();

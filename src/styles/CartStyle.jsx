@@ -27,7 +27,7 @@ height: 187px;
 `;
 
 export const ProductCartVariableTitle = styled.span`
-color: #000;
+color: ${props => props.theme.color};
 font-family: 'Satoshi' , sans-serif;
 font-size: 14px;
 font-style: normal;
@@ -36,7 +36,7 @@ line-height: normal;
 `;
 
 export const ProductCartVariable = styled.span`
-color: rgba(0, 0, 0, 0.60);
+color: ${props => props.theme.deactiveBorder};
 font-family: 'Satoshi' , sans-serif;
 font-size: 14px;
 font-style: normal;
@@ -50,7 +50,7 @@ background-color: transparent;
 `;
 
 export const OrderTitle = styled.h1`
-color: #000;
+color: ${props => props.theme.color};
 font-family: 'Satoshi' , sans-serif;
 font-size: 24px;
 font-style: normal;
@@ -59,7 +59,7 @@ line-height: normal;
 `;
 
 export const OrderPriceText = styled.p`
-color: rgba(0, 0, 0, 0.60);
+color: ${props => props.theme.deactiveBorder};
 font-family: 'Satoshi' , sans-serif;
 font-size: 20px;
 font-style: normal;
@@ -68,7 +68,7 @@ line-height: normal;
 `;
 
 export const OrderTotalText = styled.p`
-color: #000;
+color: ${props => props.theme.color};
 font-family: 'Satoshi' , sans-serif;
 font-size: 20px;
 font-style: normal;
@@ -77,7 +77,7 @@ line-height: normal;
 `;
 
 export const OrderPrice = styled.p`
-color: #000;
+color: ${props => props.theme.color};
 text-align: right;
 font-family: 'Satoshi' , sans-serif;
 font-size: 20px;
@@ -87,7 +87,7 @@ line-height: normal;
 `;
 
 export const OrderTotalPrice = styled.p`
-color: #000;
+color:${props => props.theme.color};
 text-align: right;
 font-family: 'Satoshi' , sans-serif;
 font-size: 24px;
@@ -104,7 +104,7 @@ border-radius: 62px;
 padding: 12px 16px 12px 40px;
 border: none;
 outline: none;
-background: #F0F0F0;
+background: ${props => props.theme.gray};
 `;
 
 export const PromoIconContainer = styled.div`
@@ -124,8 +124,8 @@ gap: 12px;
 align-self: stretch;
 border-radius: 62px;
 border: none;
-background: #000;
-color: #FFF;
+background: ${props => props.theme.zbackground};
+color: ${props => props.theme.zcolor};
 font-family: 'Satoshi',sans-serif;
 font-size: 16px;
 font-style: normal;

@@ -109,13 +109,16 @@ export const IconsWrapper = styled.div`
 
 export const SSearchBar = styled.input`
     padding: 12px 16px 12px 40px;
-    background-color: #F0F0F0;
+    background-color:${(props) => props.theme.gray};
     border: 1px solid #F0F0F0;
     border-radius: 62px;
     outline: none;
     gap: 12px;
     &:focus {
         border-color: #007bff;
+    }
+    &::placeholder {
+      color: ${(props) => props.theme.color};
     }
 `;
 
@@ -138,7 +141,7 @@ export const IconContainer = styled.div`
 `;
 
 export const SectionTitle = styled.h2`
-color: #000;
+color: ${(props) => props.theme.color};
 text-align: center;
 font-family: "Integral CF Bold";
 font-size: 48px;

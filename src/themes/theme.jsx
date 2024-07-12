@@ -5,6 +5,8 @@ export const lightTheme = {
     zcolor: '#fff',
     border: '#000',
     deactiveBorder: 'rgba(0, 0, 0, 0.60)',
+    gray: '#f0f0f0',
+    half: '#000'
 };
 
 export const darkTheme = {
@@ -14,4 +16,7 @@ export const darkTheme = {
     zcolor: '#000',
     border: '#fff',
     deactiveBorder: 'rgba(255, 255, 255, 0.6)',
+    gray: 'rgba(255, 255, 255, 0.1)',
+    half: 'rgba(255, 255, 255, 0.3)'
+
 };

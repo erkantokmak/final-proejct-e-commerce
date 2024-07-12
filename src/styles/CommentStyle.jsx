@@ -19,7 +19,7 @@ align-items: center;
 
 export const AllReviewText = styled.p`
 color: #000;
-font-family: 'Satoshi';
+font-family: 'Satoshi' , sans-serif;
 font-size: 24px;
 font-style: normal;
 font-weight: 700;
@@ -28,7 +28,7 @@ line-height: normal;
 
 export const CommentText = styled.p`
 color: rgba(0, 0, 0, 0.60);
-font-family: 'Satoshi';
+font-family: 'Satoshi' , sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -37,7 +37,7 @@ line-height: 22px;
 
 export const PostedDateText = styled.p`
 color: rgba(0, 0, 0, 0.60);
-font-family: 'Satoshi';
+font-family: 'Satoshi' , sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
@@ -48,7 +48,7 @@ export const AllReviewCount = styled.span`
 color: rgba(0, 0, 0, 0.60);
 leading-trim: both;
 text-edge: cap;
-font-family: 'Satoshi';
+font-family: 'Satoshi' , sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -58,7 +58,7 @@ margin-left: 8px;
 
 export const LatestText = styled.span`
 color: #000;
-font-family: 'Satoshi';
+font-family: 'Satoshi' , sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
@@ -77,7 +77,7 @@ border: none;
 background: #000;
 color: #fff;
 color: #FFF;
-font-family: 'Satoshi';
+font-family: 'Satoshi' , sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;

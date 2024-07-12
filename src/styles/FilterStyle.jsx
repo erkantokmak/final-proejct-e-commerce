@@ -1,18 +1,17 @@
 "use client"
 import styled from 'styled-components';
 import RangeSlider from "react-range-slider-input";
-import { IoMdCheckmark } from 'react-icons/io';
-
 
 export const FilterContainer = styled.div`
 border-radius: 20px;
 border: 1px solid rgba(0, 0, 0, 0.10);
 padding: 20px 24px;
+background-color: ${(props) => props.theme.zcolor};
 `;
 
 export const FilterHeader = styled.span`
-color: #000;
-font-family: 'Satoshi';
+color: ${(props) => props.theme.color};
+font-family: 'Satoshi', sans-serif;
 font-size: 20px;
 font-style: normal;
 font-weight: 700;
@@ -81,11 +80,11 @@ export const ProductSize = styled.button`
 export const ApplyFilterButton = styled.button`
 border-radius: 62px;
 border:none;
-background: #000;
+background: ${(props) => props.theme.zbackground};
 padding: 16px 54px;
 width: 100%;
-color: #FFF;
-font-family: 'Satoshi';
+color: ${(props) => props.theme.zcolor};
+font-family: 'Satoshi', sans-serif;
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
@@ -96,7 +95,7 @@ export const FilterInlineText = styled.span`
 color: rgba(0, 0, 0, 0.60);
 leading-trim: both;
 text-edge: cap;
-font-family: 'Satoshi';
+font-family: 'Satoshi', sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;

@@ -112,6 +112,13 @@
     "quantity": "Quantity",
     "loginPls": "Please Login for Write A Review",
     "newslettersuccess": "Thank you for subscribing to our newsletter!",
-    "categoryTitle": "Casual"
+    "categoryTitle": "Casual",
+    "somethingWrong": "Something went wrong. Please try again.",
+    "returnHome": "Return Home",
+    "tryAgain": "Try Again",
+    "404ntf": "404 - Page Not Found",
+    "invalidCode": "Invalid Promo Code",
+    "quantityUpdated": "Quantity Updated",
+    "deleteItem": "Item Deleted From Your Basket Successfully!"
     
 }

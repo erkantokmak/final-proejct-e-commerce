@@ -34,8 +34,8 @@ export default async function RootLayout(props) {
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <StoreProvider>
                         <ThemeWrapper >
-                        <GlobalStyles />
-                        <GlobalVariables />
+                            <GlobalStyles />
+                            <GlobalVariables />
                             <StyledComponentsRegistry>
                                 <DiscountFirst />
                                 <Navbar />

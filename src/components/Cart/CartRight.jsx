@@ -25,7 +25,7 @@ const CartRight = () => {
     const dispatch = useDispatch();
     const cartItems = useSelector(state => state.cart.cartItem);
     const promoCodes = useSelector(state => state.cart.promoCodes);
-   
+
     const [totalPrice, setTotalPrice] = useState(0);
     const [loading, setLoading] = useState(false);
     const [promoCode, setPromoCode] = useState('');
@@ -42,9 +42,9 @@ const CartRight = () => {
         };
         promoCodeHandler();
         setLoading(false);
-    }, [])    
+    }, [])
 
-    const calculateTotalPrice = (cartItems = [], promoCode = null, promoCodes= []) => {
+    const calculateTotalPrice = (cartItems = [], promoCode = null, promoCodes = []) => {
         let subTotalPrice = 0;
         let totalPrice = 0;
         setDiscountedItem(cartItems.some(item => item.discountPercentage > 0));
@@ -59,14 +59,19 @@ const CartRight = () => {
             totalPrice += discountedPrice * item.quantity;
         });
 
-        if (promoCode === 'FIRSTPURCHASE') {
-            totalPrice *= 0.8;
-        } else {
-            const promoCodeData = promoCodes.find((code) => code.code === promoCode);
-            if (promoCodeData) {
-                console.log(Number(promoCodeData.discount))
-                totalPrice = (totalPrice) - (Number(promoCodeData.discount));
-            }
+        if (promoCode) {
+            if (promoCode === 'FIRSTPURCHASE') {
+                totalPrice *= 0.8;
+            } else {
+                const promoCodeData = promoCodes.find((code) => code.code === promoCode);
+                if (promoCodeData) {
+                    console.log(Number(promoCodeData.discount))
+                    totalPrice = (totalPrice) - (Number(promoCodeData.discount));
+                    toast.success('Promo code applied successfully');
+                } else {
+                    toast.info(t('invalidCode'))
+                }
+        }
         }
         if (totalPrice <= 100) {
             totalPrice += 15;
@@ -76,21 +81,20 @@ const CartRight = () => {
     };
 
     useEffect(() => {
-        if(!loading){
+        if (!loading) {
             const totalPrice = calculateTotalPrice(cartItems, promoCode, promoCodes);
             setTotalPrice(totalPrice)
         }
-    },[])
-    useEffect(()=> {
+    }, [])
+    useEffect(() => {
         const totalPrice = calculateTotalPrice(cartItems, promoCode, promoCodes);
-            setTotalPrice(totalPrice)
-    },[cartItems])
+        setTotalPrice(totalPrice)
+    }, [cartItems])
 
-    const handleApplyPromoCode = (e,cartItems, promoCode, promoCodes) => {
+    const handleApplyPromoCode = (e, cartItems, promoCode, promoCodes) => {
         e.preventDefault();
         const totalPrice = calculateTotalPrice(cartItems, promoCode, promoCodes);
-        setTotalPrice(totalPrice);
-        toast.success('Promo code applied successfully');
+        setTotalPrice(totalPrice);        
     };
 
     return (
@@ -111,28 +115,28 @@ const CartRight = () => {
                         </div>
                         {
                             discountedItem === true ? (
-                        
-                        <div className="d-flex justify-content-between">
-                            <OrderPriceText>
-                                {t('discount')} {'('}-{discount}%{')'}
-                            </OrderPriceText>
-                            <OrderPrice>
-                                -${subTotalPrice - totalPrice}
-                            </OrderPrice>
-                        </div>) : ''
-                    }
+
+                                <div className="d-flex justify-content-between">
+                                    <OrderPriceText>
+                                        {t('discount')} {'('}-{discount}%{')'}
+                                    </OrderPriceText>
+                                    <OrderPrice>
+                                        -${subTotalPrice - totalPrice}
+                                    </OrderPrice>
+                                </div>) : ''
+                        }
                         {
                             fee === true ? (
-                        
-                        <div className="d-flex justify-content-between">
-                            <OrderPriceText>
-                                {t('deliveryFee')}
-                            </OrderPriceText>
-                            <OrderPrice>
-                                {'$ 15'}
-                            </OrderPrice>
-                        </div>) : ''
-                    }
+
+                                <div className="d-flex justify-content-between">
+                                    <OrderPriceText>
+                                        {t('deliveryFee')}
+                                    </OrderPriceText>
+                                    <OrderPrice>
+                                        {'$ 15'}
+                                    </OrderPrice>
+                                </div>) : ''
+                        }
                     </div>
                     <div className="col-12">
                         <div className="d-flex flex-column gap-3">
@@ -156,7 +160,7 @@ const CartRight = () => {
                                             onChange={(e) => setPromoCode(e.target.value)}
                                         />
                                     </PromoContainer>
-                                    <ApplyButton type='button' onClick={(e) => {handleApplyPromoCode(e ,cartItems, promoCode, promoCodes)}}>{t('applyButton')}</ApplyButton>
+                                    <ApplyButton type='button' onClick={(e) => { handleApplyPromoCode(e, cartItems, promoCode, promoCodes) }}>{t('applyButton')}</ApplyButton>
                                 </div>
                             </form>
                             <ApplyButton >{t('checkoutButton')} <FaArrowRight /> </ApplyButton>

@@ -3,7 +3,7 @@ import { FaChevronDown } from "react-icons/fa";
 import IconBox from "./IconBox";
 import Searchbar from './Searchbar'
 import { useTranslations } from "next-intl";
-import { HeaderContainer } from "@/styles/ComponentStyle";
+import { HeaderContainer, StyledLink } from "@/styles/ComponentStyle";
 import { Container } from "@/styles/LayoutStyle";
 import { Link } from "@/navigation";
 
@@ -27,9 +27,9 @@ const Navbar = () => {
                         >
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <Link className="navbar-brand" href="/">
+                        <StyledLink className="navbar-brand" href="/">
                             <h1 className="fs-2">{t('logo')}</h1>
-                        </Link>
+                        </StyledLink>
                     </div>
                     <div className="collapse navbar-collapse gap-5 mx-auto" id="mainNav">
                         <ul className="navbar-nav me-auto">

@@ -1,13 +1,14 @@
 import { deleteItemFromCart, updateQuantity } from '@/lib/features/cart/cartSlice';
 import { TrashButton } from '@/styles/CartStyle';
 import { QuantitiyMinus, QuantityPlus, QuantityValue } from '@/styles/ProductStyle'
+import { useTranslations } from 'next-intl';
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 
 
 const CartQuantity = ({item}) => {
-
+    const t = useTranslations();
     const [quantity, setQuantity] = useState(item.quantity);
     const basket = useSelector(state => state.cart.cartItem);
     const dispatch = useDispatch();
@@ -26,11 +27,12 @@ const CartQuantity = ({item}) => {
   
     const handleDelete = async () => {
         dispatch(deleteItemFromCart({pid: item.pid, size: item.size, color: item.color}))
-        toast.success('Item Deleted From Your Basket Successfully!')
+        toast.success(t('deleteItem'))
     }
 
     const handleQuantity = async (newQuantity) => {
         setQuantity(newQuantity);
+        toast.info(t('quantityUpdated'))
         dispatch(updateQuantity({ pid: item.pid, size: item.size, color: item.color, quantity: newQuantity }));
     };
 

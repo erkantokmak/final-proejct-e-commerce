@@ -46,7 +46,7 @@ height: 530px;
 `;
 
 export const ProductDetailTitle = styled.h1`
-color: #000;
+color: ${props => props.theme.color};
 font-family: "Integral CF Bold";
 font-size: 40px;
 font-style: normal;
@@ -55,8 +55,8 @@ line-height: normal;
 `;
 
 export const ProductTitle = styled.h1`
-color: #000;
-font-family: 'Satoshi';
+color:  ${props => props.theme.color};
+font-family: 'Satoshi', sans-serif;
 font-size: 20px;
 font-style: normal;
 font-weight: 700;
@@ -67,8 +67,8 @@ line-height: normal;
 `;
 
 export const ProductPrice = styled.h2`
-color: #000;
-font-family: 'Satoshi';
+color:  ${props => props.theme.color};
+font-family: 'Satoshi', sans-serif;
 font-size: 24px;
 font-style: normal;
 font-weight: 700;
@@ -79,8 +79,8 @@ line-height: normal;
 `;
 
 export const ProductDetailPrice = styled.h2`
-color: #000;
-font-family: 'Satoshi';
+color: ${props => props.theme.color};
+font-family: 'Satoshi', sans-serif;
 font-size: 32px;
 font-style: normal;
 font-weight: 700;
@@ -91,10 +91,10 @@ line-height: normal;
 `;
 
 export const ProductDetailSelectText = styled.p`
-color: rgba(0, 0, 0, 0.60);
+color:  ${props => props.theme.deactiveBorder};
 leading-trim: both;
 text-edge: cap;
-font-family: 'Satoshi';
+font-family: 'Satoshi', sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -160,6 +160,7 @@ background-color: #F0F0F0;
 align-self:center;
 padding: 16px 20px 16px 20px;
 margin: 0;
+color: black;
 `;
 
 export const AddToCartButton = styled.button`
@@ -172,9 +173,9 @@ align-items: center;
 gap: 12px;
 border: none;
 border-radius: 62px;
-background: #000;
+background:  ${props => props.theme.background};
 color: #fff;
-font-family: 'Satoshi';
+font-family: 'Satoshi', sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
@@ -182,10 +183,10 @@ line-height: normal;
 `;
 
 export const ProductDescription = styled.p`
-color: rgba(0, 0, 0, 0.60);
+color: ${props => props.theme.deactiveBorder};
 leading-trim: both;
 text-edge: cap;
-font-family: 'Satoshi';
+font-family: 'Satoshi', sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -193,8 +194,8 @@ line-height: 22px;
 `;
 
 export const RatingValue = styled.span`
-color: #000;
-font-family: 'Satoshi';
+color: ${props => props.theme.color};
+font-family: 'Satoshi', sans-serif;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -203,12 +204,12 @@ margin-left:13px;
 `;
 
 export const RatingValueMax = styled.span`
-color: rgba(0, 0, 0, 0.60);
+color: ${props => props.theme.deactiveBorder};
 `;
 
 export const OldPrice = styled.p`
 color: rgba(0, 0, 0, 0.40);
-font-family: 'Satoshi';
+font-family: 'Satoshi', sans-serif;
 font-size: 24px;
 font-style: normal;
 font-weight: 700;
@@ -220,7 +221,7 @@ text-decoration-line: line-through;
 `;
 export const OldDetailPrice = styled.p`
 color: rgba(0, 0, 0, 0.40);
-font-family: 'Satoshi';
+font-family: 'Satoshi', sans-serif;
 font-size: 32px;
 font-style: normal;
 font-weight: 700;
@@ -236,7 +237,7 @@ padding: 6px 14px;
 border-radius: 62px;
 background: rgba(255, 51, 51, 0.10);
 color: #F33;
-font-family: 'Satoshi';
+font-family: 'Satoshi', sans-serif;
 font-size: 12px;
 font-style: normal;
 font-weight: 500;
@@ -256,7 +257,7 @@ flex-shrink: 0;
 border-radius: 62px;
 border: 1px solid rgba(0, 0, 0, 0.10);
 color: #000;
-font-family: 'Satoshi';
+font-family: 'Satoshi', sans-serif;
 font-size: 16px;
 font-style: normal;
 font-weight: 500;

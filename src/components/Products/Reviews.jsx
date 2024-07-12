@@ -39,6 +39,7 @@ const Reviews = ({ data }) => {
                         )
                     }
                     {
+                        data.comments.length > 6 &&
                         <LoadMoreButton data={data} />
                     }
                 </div>
@@ -52,8 +53,8 @@ const Reviews = ({ data }) => {
                             )
                         )
                     }
-
                     {
+                        data.comments.length > 6 &&
                         <LoadMoreButton data={data} />
                     }
 

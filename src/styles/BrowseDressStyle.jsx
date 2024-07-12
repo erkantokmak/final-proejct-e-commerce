@@ -5,7 +5,7 @@ import styled from 'styled-components';
 export const BrowseDressSection = styled.section`
 border-radius: 40px;
 padding-bottom: 64px;
-background: #F0F0F0;
+background: ${props => props.theme.gray};
 @media screen and (max-width: 768px) {
     padding-bottom: 32px;
 } 
@@ -21,7 +21,7 @@ export const BrowseDressWrapper = styled.div`
 export const ImageBox = styled.div`
 border-radius: 20px;
 width:100%
-background-color: #fff;
+background-color: ${props => props.theme.background};
 `;
 
 export const BrowseDressImageWrapper = styled.div`
@@ -35,7 +35,7 @@ height: 289px;
 
 export const BrowseDressTitle = styled.h1`
 color: #000;
-font-family: 'Satoshi';
+font-family: 'Satoshi', sans-serif;
 font-size: 36px;
 font-style: normal;
 font-weight: 700;

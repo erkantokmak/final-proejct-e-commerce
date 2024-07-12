@@ -1,5 +1,5 @@
 "use client";
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import {
@@ -16,11 +16,13 @@ import {
 } from '@/styles/ProductStyle';
 import { addItemToCart } from '@/lib/features/cart/cartSlice';
 import useAuth from '@/lib/Hooks/useAuth';
-import { redirect } from 'next/navigation';
+import { redirect, useRouter } from 'next/navigation';
 
 const SelectProductForCard = ({ product }) => {
     const t = useTranslations();
     const dispatch = useDispatch();
+    const router = useRouter();
+    const locale = useLocale();
 
     const {currentUser} = useAuth();
     const [selectedColor, setSelectedColor] = useState(product.colors[0]);
@@ -41,7 +43,7 @@ const SelectProductForCard = ({ product }) => {
             quantity: quantity,
         };
         dispatch(addItemToCart(cartItem)); 
-        redirect('/cart');
+        router.push(`/${locale}/cart`);
     };
 
     const parsedSizes = (product) => {

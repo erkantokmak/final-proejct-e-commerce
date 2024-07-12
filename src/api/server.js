@@ -42,13 +42,13 @@ export const getComments = async (id) => {
     return data;
 }
 
-export const postComment = async (id, rate, comment) => {
+export const postComment = async (id, rate, username ,comment) => {
     const product = await getProductDetails(id);
 
     const newComment = {
         id: String(new Date().getTime()),
         rating: rate,
-        username: "Erkan TOKMAK",
+        username: username,
         comment: comment,
         date: new Date().toISOString(),
     }
@@ -95,6 +95,12 @@ export const postUserToDB = async (user) => {
     });
     revalidatePath("/register", "page");
     return res.json();
+}
+
+export const getUserToDB = async (uid) => {
+    const res = await fetch(`${URL}/users/${uid}`, { cache: "no-store" });
+    const data = await res.json();
+    return data;
 }
 
 export const updateUserToDB = async (id, baskets) => {

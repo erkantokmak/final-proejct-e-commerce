@@ -10,12 +10,18 @@ export const GlobalStyles = createGlobalStyle`
     color: ${(props) => props.theme.color};
     font-family: 'Satoshi', sans-serif;
   }
+  .page-link{
+    color: ${(props) => props.theme.color + ' !important'};
+    background-color: ${(props) => props.theme.background + ' !important'};
+  }
+  .nav-tabs{
+    display:flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
   .nav-tabs .nav-item.show .nav-link, .nav-tabs{
     border-color: none;
-    border: ${(props) => props.theme.border};
-    border-type: solid;
-    border-bottom: 1px;
-    font-size: 20px;
+    font-size: 16px !important;
     font-style: normal;
     font-weight: 500;
     line-height: 22px;
@@ -27,7 +33,10 @@ export const GlobalStyles = createGlobalStyle`
     font-weight: 500;
     line-height: 22px;
     border-color: ${(props) => props.theme.border + ' !important'};	
-    border-bottom: 2px;
+    border-bottom: 2px !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
     border-style: solid;
   }
   .nav-tabs{
@@ -35,6 +44,10 @@ export const GlobalStyles = createGlobalStyle`
   }
   .nav-link{
     color: ${(props) => props.theme.color};
+  }
+  .accordion-header{
+    background-color: ${(props) => props.theme.background + ' !important'};
+    color: ${(props) => props.theme.half + ' !important'};
   }
   .landingPage {
   background-image: url("/assets/banners/banner.png");
@@ -153,3 +166,26 @@ line-height: normal;
 }
 `;
 
+export const SignFormContainer = styled.div`
+    background: ${(props) => props.theme.half};
+    color: ${(props) => props.theme.zcolor};
+    padding: 20px;
+    border-radius: 10px;
+    border-color: ${(props) => props.theme.border};
+`;
+
+export const SignInput = styled.input`
+    padding: 12px 16px;
+    gap: 12px;
+    border-radius: 62px;
+    background: ${(props) => props.theme.gray};
+    color: ${(props) => props.theme.color};
+    outline: none;
+    border: 1px solid ${(props) => props.theme.color};
+    &::placeholder {
+          color: #000;
+    }
+    &:focus {
+          border-color: #007bff;
+    }
+`;

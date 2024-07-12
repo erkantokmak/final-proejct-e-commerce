@@ -9,15 +9,27 @@ const NewsletterForm = () => {
     const t = useTranslations();
     const handleSubmit = (e) => {
         e.preventDefault();
-        toast.success(t('newslettersuccess'))
+        const form = e.target;
+
+        if (form.checkValidity() === false) {
+          e.stopPropagation();
+        } else {
+            toast.success(t('newslettersuccess'))
+        }
+        form.classList.add('was-validated');       
     }
+
     return (
-        <form className='needs-validation' novalidate onSubmit={(e)=> {handleSubmit(e)}}>
+        <form className='needs-validation' noValidate onSubmit={(e)=> {handleSubmit(e)}}>
             <div className='position-relative'>
                 <NewsletterMailIconContainer>
                     <IoMailOutline />
                 </NewsletterMailIconContainer>
-                <EnterYourMail type="text" placeholder={t('newsletterPlaceholder')} className='form-control' required />
+                <EnterYourMail 
+                type="text" 
+                placeholder={t('newsletterPlaceholder')} 
+                className='form-control' 
+                required />
             </div>
             <SubscribeToNewsletter className='form-control' type='submit'>
                 {t('newsletterrButton')}

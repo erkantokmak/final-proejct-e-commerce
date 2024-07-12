@@ -67,11 +67,11 @@ const CartRight = () => {
                 if (promoCodeData) {
                     console.log(Number(promoCodeData.discount))
                     totalPrice = (totalPrice) - (Number(promoCodeData.discount));
-                    toast.success('Promo code applied successfully');
+                    toast.success(t('promoSuccess'));
                 } else {
                     toast.info(t('invalidCode'))
                 }
-        }
+            }
         }
         if (totalPrice <= 100) {
             totalPrice += 15;
@@ -94,7 +94,7 @@ const CartRight = () => {
     const handleApplyPromoCode = (e, cartItems, promoCode, promoCodes) => {
         e.preventDefault();
         const totalPrice = calculateTotalPrice(cartItems, promoCode, promoCodes);
-        setTotalPrice(totalPrice);        
+        setTotalPrice(totalPrice);
     };
 
     return (
@@ -105,14 +105,17 @@ const CartRight = () => {
                         <OrderTitle>
                             {t('orderSummary')}
                         </OrderTitle>
-                        <div className="d-flex justify-content-between">
-                            <OrderPriceText>
-                                {t('subTotal')}
-                            </OrderPriceText>
-                            <OrderPrice>
-                                ${subTotalPrice}
-                            </OrderPrice>
-                        </div>
+                        {
+                            subTotalPrice > 0 &&
+                            <div className="d-flex justify-content-between">
+                                <OrderPriceText>
+                                    {t('subTotal')}
+                                </OrderPriceText>
+                                <OrderPrice>
+                                    ${subTotalPrice}
+                                </OrderPrice>
+                            </div>
+                        }
                         {
                             discountedItem === true ? (
 
@@ -126,7 +129,7 @@ const CartRight = () => {
                                 </div>) : ''
                         }
                         {
-                            fee === true ? (
+                            fee === true && subTotalPrice > 0 ? (
 
                                 <div className="d-flex justify-content-between">
                                     <OrderPriceText>
@@ -141,12 +144,17 @@ const CartRight = () => {
                     <div className="col-12">
                         <div className="d-flex flex-column gap-3">
                             <div className="d-flex justify-content-between align-items-center mt-2">
-                                <OrderPriceText className='m-0'>
-                                    {t('total')}
-                                </OrderPriceText>
-                                <OrderTotalPrice className='m-0'>
-                                    ${totalPrice.toFixed(2)}
-                                </OrderTotalPrice>
+                                {
+                                    subTotalPrice > 0 &&
+                                    <>
+                                        <OrderPriceText className='m-0'>
+                                            {t('total')}
+                                        </OrderPriceText>
+                                        <OrderTotalPrice className='m-0'>
+                                            ${totalPrice.toFixed(2)}
+                                        </OrderTotalPrice>
+                                    </>
+                                }
                             </div>
                             <form >
                                 <div className="d-flex justify-content-between gap-3 align-items-center">

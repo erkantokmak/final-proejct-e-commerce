@@ -2,8 +2,7 @@ import { SSearchBar, SearchBarContainer, SearchBarIconContainer } from '@/styles
 import { useTranslations } from 'next-intl';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-
-import Image from 'next/image';
+import SearchModal from '../SearchModal/SearchModal';
 
 const Searchbar = () => {
     const t = useTranslations();
@@ -13,8 +12,9 @@ const Searchbar = () => {
                 <SearchBarIconContainer>
                 <FontAwesomeIcon icon={faSearch} width={20.27} height={20.27}/>
                 </SearchBarIconContainer>
-                <SSearchBar type="text" placeholder={t('searchbar')} className='form-control'/>
+                <SSearchBar type="text" placeholder={t('searchbar')} className="form-control" />
             </SearchBarContainer>
+                <SearchModal />
         </>
     )
 }

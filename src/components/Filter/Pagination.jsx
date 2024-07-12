@@ -2,6 +2,7 @@
 import { useRouter } from "@/navigation";
 import { useTranslations } from "next-intl";
 import { useSearchParams } from "next/navigation";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Pagination = ({ hasNextPage, hasPrevPage }) => {
   const t = useTranslations();
@@ -24,7 +25,7 @@ const Pagination = ({ hasNextPage, hasPrevPage }) => {
       aria-label="Page navigation example"
       className="d-flex justify-content-center"
     >
-      <ul className="pagination mt-5 d-flex justify-content-between">
+      <ul className="pagination mt-5">
         <li className="page-item">
           <button
             className={`page-link ${!hasPrevPage ? "disabled" : ""}`}
@@ -34,6 +35,7 @@ const Pagination = ({ hasNextPage, hasPrevPage }) => {
               }
             }}
           >
+            <FaArrowLeft className="me-2" />
             {t("prevButton")}
           </button>
         </li>
@@ -47,6 +49,7 @@ const Pagination = ({ hasNextPage, hasPrevPage }) => {
             }}
           >
             {t("nextButton")}
+            <FaArrowRight className="ms-2" />
           </button>
         </li>
       </ul>

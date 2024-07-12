@@ -23,7 +23,7 @@ const BrowseDressStyle = () => {
                             <StyledLink href="/shop?category=casual">
                                 <ImageBox>
                                     <BrowseDressImageWrapper>
-                                        <Image src="/assets/banners/casual.png" alt="casual-dressstyle" fill className='object-fit-cover rounded-5' />
+                                        <Image src="/assets/banners/casual.png" alt="casual-dressstyle" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='object-fit-cover rounded-5' />
                                         <BrowseDressTitle className='position-absolute mt-3 ms-3'>
                                             {t('casual')}
                                         </BrowseDressTitle>
@@ -35,7 +35,7 @@ const BrowseDressStyle = () => {
                             <StyledLink href="/shop?category=formal">
                                 <ImageBox>
                                     <BrowseDressImageWrapper>
-                                        <Image src="/assets/banners/formal.png" alt="formal-dressstyle" fill className='object-fit-cover rounded-5' />
+                                        <Image src="/assets/banners/formal.png" alt="formal-dressstyle" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='object-fit-cover rounded-5' />
                                         <BrowseDressTitle className='position-absolute mt-3 ms-3'>
                                             {t('formal')}
                                         </BrowseDressTitle>
@@ -49,7 +49,7 @@ const BrowseDressStyle = () => {
                             <StyledLink href="/shop?category=party">
                                 <ImageBox>
                                     <BrowseDressImageWrapper>
-                                        <Image src="/assets/banners/party.png" alt="party-dressstyle" fill className='object-fit-cover rounded-5' />
+                                        <Image src="/assets/banners/party.png" alt="party-dressstyle" fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='object-fit-cover rounded-5' />
                                         <BrowseDressTitle className='position-absolute mt-3 ms-3'>
                                             {t('party')}
                                         </BrowseDressTitle>

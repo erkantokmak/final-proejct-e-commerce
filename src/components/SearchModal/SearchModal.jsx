@@ -12,40 +12,38 @@ const SearchModal = () => {
     const [param, setParam] = useState();
     const [products, setProducts] = useState([])
 
-    const getProduct = async () => {
-        const res = await fetch(`${URL}/products`, { cache: "no-store" });
-        const data = await res.json();
-        setProducts(data)
-    }
+    // const getProduct = async () => {
+    //     const res = await fetch(`${URL}/products`, { cache: "no-store" });
+    //     const data = await res.json();
+    //     setProducts(data)
+    // }
 
 
-    useEffect(() => {
-        getProduct();
-        console.log(param)
-        console.log(products)
-    }, [param])
+    // useEffect(() => {
+    //     getProduct();
+    //     console.log(param)
+    //     console.log(products)
+    // }, [param])
 
     return (
-        <>
-            <div
-                className="modal fade show"
-                id="searchModal"
-                aria-labelledby="searchModalLabel"
-                aria-hidden="true"
-            >
-                <div className="modal-dialog modal-dialog-centered">
-                    <div className="modal-content w-100">
-                        <div className="modal-header">
-                            <button
-                                type="button"
-                                className="btn-close"
-                                data-bs-dismiss="modal"
-                                aria-label="Close"
-
-                            ></button>
-                        </div>
-                        <div className="modal-body">
-                            <div className="d-flex col-xxl-6 col-xl-4 px-2 rounded-pill bg-body-tertiary me-3 w-100">
+        <div className="modal fade"
+        tabIndex="-1"
+            id="searchModal"
+            aria-labelledby="searchModalLabel"
+            aria-hidden="true">
+            <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-content w-100">
+                    <div className="modal-header">
+                        <button
+                            type="button"
+                            className="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        />
+                    </div>
+                    <div className="modal-body">
+                        asdfasdf
+                        {/* <div className="d-flex col-xxl-6 col-xl-4 px-2 rounded-pill bg-body-tertiary me-3 w-100">
                                 <input type="text" value={param} onChange={() => setParam(param)} />
                                 {
                                     products ? (
@@ -63,13 +61,12 @@ const SearchModal = () => {
                             )
                             ) : (<div></div>)
                                 }
-                        </div>
-
+                        </div> */}
                     </div>
                 </div>
             </div>
-        </div >
-        </>
+        </div>
+
     )
 }
 

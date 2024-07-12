@@ -71,7 +71,7 @@ const HappyCustomer = () => {
                     }}
                 >
                     {customers.map((customer) => (
-                        <div className="col-3">
+                        <div className="col-4">
                             <Comment key={customer.id} customer={customer} />
                         </div>
                     ))}

@@ -14,7 +14,7 @@ const CartItems = ({ item }) => {
           <div className="d-flex gap-3">
             <ProductBackground>
               <ProductCartImageWrapper>
-                <Image src={`/assets/products/${item.image}`} alt='test' fill className='object-fit-contain' />
+                <Image src={`/assets/products/${item.image}`} alt='test' fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='object-fit-contain' />
               </ProductCartImageWrapper>
             </ProductBackground>
             <div className='d-flex flex-column'>

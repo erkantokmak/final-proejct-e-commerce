@@ -5,8 +5,8 @@ import React from 'react'
 const Breadcrumb = ({ category, product }) => {
     return (
         <>
-            <nav style="--bs-breadcrumb-divider: '>';"  aria-label="breadcrumb">
-                <ol className="breadcrumb">
+            <nav aria-label="breadcrumb">
+                <ol className="breadcrumb mt-2">
                     <li className="breadcrumb-item"><StyledLink href="/">Home</StyledLink></li>
                     <li className="breadcrumb-item"><StyledLink href="/shop">Shop</StyledLink></li>
                     {category && <li className="breadcrumb-item"><StyledLink href={`/shop?category_like=${category}`}>{category}</StyledLink></li>}

@@ -25,6 +25,24 @@
           "username": "John Doe",
           "comment": "Great product! Fits perfectly!",
           "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
         }
       ],
       "type": "tshirt",
@@ -52,10 +70,28 @@
       "alsoLike": false,
       "comments": [
         {
-          "rating": 4,
-          "username": "Jane Smith",
-          "comment": "Good quality jeans, but runs a bit small.",
-          "date": "2024-07-05"
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
         }
       ],
       "type": "jeans",
@@ -83,17 +119,28 @@
       "alsoLike": false,
       "comments": [
         {
-          "rating": 5,
-          "username": "Emily Clark",
-          "comment": "Absolutely love this dress! Looks amazing.",
-          "date": "2024-07-04"
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
         },
         {
-          "id": "1720612394339",
-          "rating": 5,
-          "username": "Erkan TOKMAK",
-          "comment": "Syndore Sağolsun",
-          "date": "2024-07-10T11:53:14.339Z"
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
         }
       ],
       "type": "shirt",
@@ -121,88 +168,28 @@
       "alsoLike": false,
       "comments": [
         {
-          "id": "1",
-          "rating": 5,
-          "username": "Michael Brown",
-          "comment": "Very comfortable and stylish sneakers!",
-          "date": "2024-07-03"
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
         },
         {
-          "id": "2",
-          "rating": 3,
-          "username": "Michael3 Brown",
-          "comment": "Very comfortable and stylish sneakers!",
-          "date": "2024-07-03"
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
         },
         {
-          "id": "3",
-          "rating": 5,
-          "username": "Michael Brown",
-          "comment": "Very comfortable and stylish sneakers!",
-          "date": "2024-07-03"
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
         },
         {
-          "id": "4",
-          "rating": 3,
-          "username": "Michael3 Brown",
-          "comment": "Very comfortable and stylish sneakers!",
-          "date": "2024-07-03"
-        },
-        {
-          "id": "5",
-          "rating": 5,
-          "username": "Michael Brown",
-          "comment": "Very comfortable and stylish sneakers!",
-          "date": "2024-07-03"
-        },
-        {
-          "id": "6",
-          "rating": 3,
-          "username": "Michael3 Brown",
-          "comment": "Very comfortable and stylish sneakers!",
-          "date": "2024-07-03"
-        },
-        {
-          "id": "7",
-          "rating": 5,
-          "username": "Michael Brown",
-          "comment": "Very comfortable and stylish sneakers!",
-          "date": "2024-07-03"
-        },
-        {
-          "id": "8",
-          "rating": 3,
-          "username": "Michael3 Brown",
-          "comment": "Very comfortable and stylish sneakers!",
-          "date": "2024-07-03"
-        },
-        {
-          "id": "1720603815891",
-          "rating": 5,
-          "username": "Erkan TOKMAK",
-          "comment": "Erkan tokmak test",
-          "date": "2024-07-10T09:30:15.891Z"
-        },
-        {
-          "id": "1720603824524",
-          "rating": 5,
-          "username": "Erkan TOKMAK",
-          "comment": "asdfasdf",
-          "date": "2024-07-10T09:30:24.524Z"
-        },
-        {
-          "id": "1720603826828",
-          "rating": 5,
-          "username": "Erkan TOKMAK",
-          "comment": "asdfasdf",
-          "date": "2024-07-10T09:30:26.828Z"
-        },
-        {
-          "id": "1720603827442",
-          "rating": 5,
-          "username": "Erkan TOKMAK",
-          "comment": "asdfasdf",
-          "date": "2024-07-10T09:30:27.442Z"
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
         }
       ],
       "type": "tshirt ",
@@ -230,10 +217,28 @@
       "alsoLike": false,
       "comments": [
         {
-          "rating": 4,
-          "username": "Anna White",
-          "comment": "Nice jacket, but a bit expensive.",
-          "date": "2024-07-06"
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
         }
       ],
       "type": "shirt",
@@ -261,10 +266,28 @@
       "alsoLike": false,
       "comments": [
         {
-          "rating": 5,
-          "username": "Olivia Green",
-          "comment": "Perfect hat for the summer!",
-          "date": "2024-07-01"
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
         }
       ],
       "type": "tshirt",
@@ -292,10 +315,28 @@
       "alsoLike": false,
       "comments": [
         {
-          "rating": 5,
-          "username": "Sophia Blue",
-          "comment": "Absolutely love this dress! Looks amazing.",
-          "date": "2024-07-05"
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
         }
       ],
       "type": "shorts",
@@ -323,9 +364,27 @@
       "alsoLike": false,
       "comments": [
         {
-          "rating": 4,
-          "username": "Liam Red",
-          "comment": "Nice blouse, but wrinkles easily.",
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
           "date": "2024-07-02"
         }
       ],
@@ -354,10 +413,28 @@
       "alsoLike": true,
       "comments": [
         {
-          "rating": 4,
-          "username": "Ethan Black",
-          "comment": "Fits well, but the color is a bit off.",
-          "date": "2024-07-03"
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
         }
       ],
       "type": "tshirt",
@@ -385,10 +462,28 @@
       "alsoLike": true,
       "comments": [
         {
-          "rating": 5,
-          "username": "Ava White",
-          "comment": "Very comfortable for heels!",
-          "date": "2024-07-04"
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
         }
       ],
       "type": "tshirts",
@@ -416,10 +511,28 @@
       "alsoLike": true,
       "comments": [
         {
-          "rating": 4,
-          "username": "James Grey",
+          "rating": 4.5,
+          "username": "John Doe",
           "comment": "Great product! Fits perfectly!",
-          "date": "2024-07-01"
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
         }
       ],
       "type": "tshirt",
@@ -447,10 +560,28 @@
       "alsoLike": true,
       "comments": [
         {
-          "rating": 4,
-          "username": "Emily Clark",
-          "comment": "Good quality jeans, but runs a bit small.",
-          "date": "2024-07-01"
+          "rating": 4.5,
+          "username": "John Doe",
+          "comment": "Great product! Fits perfectly!",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Samantha D.",
+          "comment": "I absolutely love this t-shirt! The design is unique and the fabric feels so comfortable. As a fellow designer, I appreciate the attention to detail. It's become my favorite go-to shirt",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Alex M.",
+          "comment": "The t-shirt exceeded my expectations! The colors are vibrant and the print quality is top-notch. Being a UI/UX designer myself, I'm quite picky about aesthetics, and this t-shirt definitely gets a thumbs up from me.",
+          "date": "2024-07-02"
+        },
+        {
+          "rating": 4.5,
+          "username": "Ava H.",
+          "comment": "I'm not just wearing a t-shirt; I'm wearing a piece of design philosophy. The intricate details and thoughtful layout of the design make this shirt a conversation starter.",
+          "date": "2024-07-02"
         }
       ],
       "type": "tshirt",
@@ -461,32 +592,44 @@
   "customerComments": [
     {
       "id": "1",
-      "username": "John Doe",
-      "comment": "Great product! Fits perfectly!",
+      "username": "Sarah M.",
+      "comment": "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
       "rating": 5
     },
     {
       "id": "2",
-      "username": "Jane Smith",
-      "comment": "Good quality jeans, but runs a bit small.",
+      "username": "Alex K.",
+      "comment": "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.",
       "rating": 5
     },
     {
       "id": "3",
-      "username": "Emily Clark",
-      "comment": "Absolutely love this dress! Looks amazing.",
+      "username": "James L.",
+      "comment": "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
       "rating": 5
     },
     {
       "id": "4",
       "username": "Michael Brown",
-      "comment": "Very comfortable and stylish sneakers!",
+      "comment": "I am so happy to have discovered Shop.co! Finding so many options in different styles is fantastic. It's truly enjoyable to find trendy yet affordable items.",
       "rating": 5
     },
     {
       "id": "5",
       "username": "Anna White",
-      "comment": "Nice jacket, but a bit expensive.",
+      "comment": "Shop.co's wide range of products is really impressive. They offer options that keep up with fashion trends and cater to every taste. I feel like a style icon every time I shop here.",
+      "rating": 5
+    },
+    {
+      "id": "6",
+      "username": "Ethan Black",
+      "comment": "I always find what I'm looking for at Shop.co. As someone who closely follows trends, it makes me very happy to always find the newest and most stylish pieces here.",
+      "rating": 5
+    },
+    {
+      "id": "7",
+      "username": "Sophia Blue",
+      "comment": "The collections at Shop.co are truly unique. It's possible to find many pieces in both classic and modern styles. My shopping experience is perfect every time.",
       "rating": 5
     }
   ],
@@ -501,7 +644,52 @@
       "id": "YjUjSTNojfZl56dAzVDLdfsQTkv2",
       "email": "erkantokmak0@gmail.com",
       "username": "Erkan TOKMAK",
-      "baskets": []
+      "baskets": [
+        {
+          "id": "836e07a3-3d38-4d1d-818a-082446f1a738",
+          "pid": "1",
+          "image": "tshirt-with-tape-details.png",
+          "title": "T-shirt with Tape Details",
+          "price": 120,
+          "discountPercentage": 0,
+          "color": "red",
+          "size": "Large",
+          "quantity": 3
+        },
+        {
+          "id": "8bf13691-5cf2-40ad-a3a3-3f8bd19db024",
+          "pid": "10",
+          "image": "polo-with-tipping-details.png",
+          "title": "Polo with Tipping Details",
+          "price": 180,
+          "discountPercentage": 0,
+          "color": "pink",
+          "size": "X-Large",
+          "quantity": 1
+        },
+        {
+          "id": "0ee28c35-896b-4938-a39e-7c05dd5bdeb7",
+          "pid": "2",
+          "image": "skinny-fit-jeans.png",
+          "title": "Skinny Fit Jeans",
+          "price": 240,
+          "discountPercentage": 20,
+          "color": "darkolivegreen,darkslategray,darkslateblue,green,red,yellow,orange,lightskyblue,blue,purple,pink,white,black",
+          "size": "Small,Medium,Large,X-Large",
+          "quantity": 1
+        },
+        {
+          "id": "271d3cb4-6dc6-443b-aa48-39e7c5053881",
+          "pid": "2",
+          "image": "skinny-fit-jeans.png",
+          "title": "Skinny Fit Jeans",
+          "price": 240,
+          "discountPercentage": 20,
+          "color": "red",
+          "size": "Medium",
+          "quantity": 2
+        }
+      ]
     },
     {
       "id": "NxpS0f3BaIaHxUdUMQwDWzNJLsg1",
@@ -531,6 +719,12 @@
           "quantity": 1
         }
       ]
+    },
+    {
+      "id": "YqIECcsTqkczEjh0shFiRurvvdN2",
+      "email": "deneme@mail.com",
+      "username": "denem deneme",
+      "baskets": []
     }
   ],
   "promoCodes": [

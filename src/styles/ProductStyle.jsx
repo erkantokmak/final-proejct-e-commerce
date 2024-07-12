@@ -34,6 +34,8 @@ export const ProductDetailImageColumn = styled.div`
 display: flex;
 flex-direction: column;
 gap: 14px;
+@media screen and (max-width: 768px) {
+    flex-direction: row;
 `;
 
 export const ProductDetailSingleImageBox = styled.div`
@@ -173,8 +175,8 @@ align-items: center;
 gap: 12px;
 border: none;
 border-radius: 62px;
-background:  ${props => props.theme.background};
-color: #fff;
+background:  ${props => props.theme.zbackground};
+color: ${props => props.theme.zcolor};
 font-family: 'Satoshi', sans-serif;
 font-size: 16px;
 font-style: normal;
@@ -208,7 +210,7 @@ color: ${props => props.theme.deactiveBorder};
 `;
 
 export const OldPrice = styled.p`
-color: rgba(0, 0, 0, 0.40);
+color: ${props => props.theme.oldprice};
 font-family: 'Satoshi', sans-serif;
 font-size: 24px;
 font-style: normal;

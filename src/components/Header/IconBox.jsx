@@ -11,7 +11,7 @@ import { BiWorld } from "react-icons/bi";
 
 const IconBox = () => {
     const { currentUser } = useAuth();
-
+    const locale = useLocale();
     return (
         <>
             <IconsWrapper className="d-flex align-items-center">
@@ -27,9 +27,16 @@ const IconBox = () => {
                         :
                         <StyledLink href="/register" className="me-3"><IoMdLogIn size={24} /></StyledLink>
                 }
-                <StyledLink href="/" className="me-3">
-                    <BiWorld size={24} />
-                </StyledLink>
+                {
+                    locale === 'en' ?
+                        <StyledLink href="/" locale="tr" className="me-3">
+                            <BiWorld size={24} />
+                        </StyledLink> :
+                        <StyledLink href="/" locale="en" className="me-3">
+                            <BiWorld size={24} />
+                        </StyledLink>
+                }
+
                 <ThemeToggle />
             </IconsWrapper>
 

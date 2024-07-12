@@ -26,13 +26,19 @@ width: 24px;
 height: 24px;
 `;
 
+export const ClearButton = styled.button`
+border: none;
+background-color: transparent;
+cursor: pointer;
+`;
+
 export const FilterButton = styled.button`
 background-color: ${props => props.selected ? '#808080' : '#fff'};
 border: none;
 `;
 
 export const FilterCategoryTitle = styled.h3`
-color: #000;
+color: ${(props) => props.theme.color};
 font-family: 'Satoshi', sans-serif;
 font-size: 32px;
 font-style: normal;

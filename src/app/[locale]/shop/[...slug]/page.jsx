@@ -9,7 +9,7 @@ import { Container } from "@/styles/LayoutStyle";
 const page = async ({ params }) => {
   console.log(params)
   const data = await getProductDetails(params.slug);
-
+ 
   return (
     <>
       <Container>

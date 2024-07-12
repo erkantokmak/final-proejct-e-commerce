@@ -11,6 +11,7 @@ line-height: normal;
 `;
 
 export const CartContainer = styled.div`
+background-color: ${props => props.theme.cartbg};
 border-radius: 20px;
 padding: 20px 24px;
 border: 1px solid rgba(0, 0, 0, 0.10);

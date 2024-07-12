@@ -12,7 +12,7 @@ const SingleProduct = ({ id, image, title, rating, price, discountPercentage }) 
             <StyledLink href={`/shop/${id}`}>
                 <ProductBackground>
                     <ProductImageWrapper className='position-relative'>
-                        <Image src={`/assets/products/${image}`} alt="product" fill className='object-fit-contain' />
+                        <Image src={`/assets/products/${image}`} alt="product" fill  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='object-fit-contain' />
                     </ProductImageWrapper>
                 </ProductBackground>
             </StyledLink>

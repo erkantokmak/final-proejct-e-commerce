@@ -18,7 +18,7 @@ align-items: center;
 `;
 
 export const AllReviewText = styled.p`
-color: #000;
+color: ${props => props.theme.color};
 font-family: 'Satoshi' , sans-serif;
 font-size: 24px;
 font-style: normal;
@@ -27,7 +27,7 @@ line-height: normal;
 `;
 
 export const CommentText = styled.p`
-color: rgba(0, 0, 0, 0.60);
+color: ${props => props.theme.deactiveBorder};
 font-family: 'Satoshi' , sans-serif;
 font-size: 16px;
 font-style: normal;
@@ -36,7 +36,7 @@ line-height: 22px;
 `;
 
 export const PostedDateText = styled.p`
-color: rgba(0, 0, 0, 0.60);
+color: ${props => props.theme.deactiveBorder};
 font-family: 'Satoshi' , sans-serif;
 font-size: 16px;
 font-style: normal;
@@ -45,7 +45,7 @@ line-height: 22px;
 `;
 
 export const AllReviewCount = styled.span`
-color: rgba(0, 0, 0, 0.60);
+color: ${props => props.theme.deactiveBorder};
 leading-trim: both;
 text-edge: cap;
 font-family: 'Satoshi' , sans-serif;
@@ -57,7 +57,7 @@ margin-left: 8px;
 `;
 
 export const LatestText = styled.span`
-color: #000;
+color: ${props => props.theme.color};
 font-family: 'Satoshi' , sans-serif;
 font-size: 16px;
 font-style: normal;
@@ -74,9 +74,8 @@ align-items: center;
 padding: 16px 20px;
 border-radius: 62px;
 border: none;
-background: #000;
-color: #fff;
-color: #FFF;
+background-color: ${props => props.theme.zbackground};
+color: ${(props) => props.theme.zcolor};
 font-family: 'Satoshi' , sans-serif;
 font-size: 16px;
 font-style: normal;

@@ -10,31 +10,30 @@ const ProductDetail = ({ product }) => {
         
             <div className="row">
                 <div className="col-12 col-md-6">
-                    <div className="row">
-                        <div className="col-4">
+                    <div className="row d-flex flex-wrap-reverse">
+                        <div className="col-12 col-md-4 mt-4">
                             <ProductDetailImageColumn>
                                 <ProductBackground>
                                     <ProductDetailImageWrapper className='position-relative'>
-                                        <Image src={`/assets/products/${product.image}`} alt={product.title} layout="fill" className='object-fit-contain' />
+                                        <Image src={`/assets/products/${product.image}`} alt={product.title} layout="fill" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='object-fit-contain' />
                                     </ProductDetailImageWrapper>
                                 </ProductBackground>
                                 <ProductBackground>
                                     <ProductDetailImageWrapper className='position-relative'>
-                                        <Image src={`/assets/products/${product.image}`} alt={product.title} layout="fill" className='object-fit-contain' />
+                                        <Image src={`/assets/products/${product.image}`} alt={product.title} layout="fill" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='object-fit-contain' />
                                     </ProductDetailImageWrapper>
                                 </ProductBackground>
                                 <ProductBackground>
                                     <ProductDetailImageWrapper className='position-relative'>
-                                        <Image src={`/assets/products/${product.image}`} alt={product.title} layout="fill" className='object-fit-contain' />
+                                        <Image src={`/assets/products/${product.image}`} alt={product.title} layout="fill" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" className='object-fit-contain' />
                                     </ProductDetailImageWrapper>
                                 </ProductBackground>
                             </ProductDetailImageColumn>
-
                         </div>
-                        <div className="col-8">
+                        <div className="col-12 col-md-8 mt-4">
                             <ProductBackground>
                                 <ProductDetailSingleImageBox className='position-relative'>
-                                    <Image src={`/assets/products/${product.image}`} alt={product.title} layout="fill" className='object-fit-contain' />
+                                    <Image src={`/assets/products/${product.image}`} alt={product.title} layout="fill" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"  className='object-fit-contain' />
                                 </ProductDetailSingleImageBox>
                             </ProductBackground>
                         </div>

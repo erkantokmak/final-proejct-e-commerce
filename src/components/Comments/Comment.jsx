@@ -20,6 +20,7 @@ const Comment = ({customer}) => {
             alt="verified"
             className="object-fit-contain"
             fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </StyledIcon>
       </h5>

@@ -1,7 +1,7 @@
 "use server"
 import { revalidatePath } from "next/cache";
 
-const URL = "http://localhost:3001"
+const URL = "https://final-project-e-commerce-database.vercel.app/"
 
 export const getNewArrivals = async () => {
     const res = await fetch(`${URL}/products`, { cache: "no-store" });

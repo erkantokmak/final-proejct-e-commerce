@@ -1,7 +1,7 @@
 "use server"
 import { revalidatePath } from "next/cache";
 
-const URL = "http://localhost:3001"
+const URL = "hhttps://final-project-e-commerce-database.vercel.app"
 // const URL = "buraya kendi json server urlinizi giriniz"
 
 export const getNewArrivals = async () => {
